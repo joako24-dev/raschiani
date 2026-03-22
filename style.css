@@ -1,0 +1,322 @@
+
+:root{
+--crema:#F5EDE3;
+--crema2:#EFE3D6;
+
+--marron-claro:#C8A98D;
+--marron:#8B5E3C;
+--marron-oscuro:#6F4A32;
+
+--negro:#1A1A1A;
+
+--rosa:#D8A48F;
+--rosa-oscuro:#B76E5D;
+}
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Georgia', serif;
+}
+
+body{
+background:var(--crema);
+color:var(--negro);
+}
+
+.titulo{
+    color:var(--marron-oscuro);
+    padding: 20px;
+
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:rgba(245,237,227,0.8);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:1000;
+border-bottom:1px solid #ddd;
+}
+.navbar a{
+color:var(--negro);
+text-decoration:none;
+margin:0 10px;
+font-size:14px;
+letter-spacing:1px;
+text-transform:uppercase;
+}
+
+.navbar a:hover{
+color:var(--marron);
+}
+
+.carrito-icono{
+background:var(--marron);
+color:white;
+padding:8px 14px;
+border-radius:20px;
+cursor:pointer;
+font-size:14px;
+}
+.item-carrito{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:10px;
+padding:6px;
+background:#fff;
+border-radius:10px;
+}
+
+.img-carrito{
+width:80px;         
+height:80px;
+object-fit:contain;
+background:none;    
+padding:0;           
+border-radius:8px;
+}
+
+.item-carrito .info{
+font-size:14px;
+}
+
+/* 📱 menu */
+.menu-toggle{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+
+/* 🌟 HERO PREMIUM */
+.hero{
+height:70vh;
+background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+url("img/hero.png");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.tituloHero{
+font-size:3.5rem;
+letter-spacing:4px;
+font-weight:normal;
+}
+
+.subtituloHero{
+margin-top:10px;
+font-size:1.1rem;
+color:#eee;
+}
+
+/* 📦 CONTENEDOR */
+.contenedor{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+padding:40px;
+}
+
+/* 🧾 CARD PREMIUM */
+.card{
+background:var(--crema2);
+border-radius:10px;
+overflow:hidden;
+transition:0.3s;
+padding-bottom:10px;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+background-color: var(--crema2);
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+/* TITULOS */
+.card h3{
+margin:15px 10px 5px;
+font-size:18px;
+font-weight:normal;
+}
+
+/* PRECIO */
+.precio{
+color:var(--marron);
+font-weight:bold;
+margin-left: 10px;
+}
+
+/* BOTONES */
+.card button{
+width:80%;
+margin:5px auto;
+padding:10px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+transition:0.3s;
+font-size:13px;
+}
+
+.agregar{
+background:var(--negro);
+color:white;
+}
+
+.agregar:hover{
+background:var(--marron);
+}
+
+.detalles{
+background:var(--rosa);
+color:white;
+}
+
+.detalles:hover{
+background:var(--rosa-oscuro);
+}
+
+/* 🪟 MODALES PREMIUM */
+.modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:2000;
+}
+
+.modal.activo{
+display:flex;
+}
+
+.contenido{
+background:var(--crema);
+padding:30px;
+border-radius:10px;
+width:90%;
+max-width:400px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+animation:fade 0.3s ease;
+}
+
+.contenido img{
+width:100%;
+border-radius:10px;
+margin:15px 0;
+}
+
+.contenido h2{
+margin-bottom:10px;
+font-weight:normal;
+}
+
+.contenido button{
+margin-top:10px;
+padding:10px;
+border:none;
+border-radius:20px;
+background:var(--negro);
+color:white;
+cursor:pointer;
+}
+
+/* LISTA */
+#listaCarrito{
+list-style:none;
+margin:10px 0;
+}
+
+#listaCarrito li{
+padding:5px;
+border-bottom:1px solid #ccc;
+}
+
+/* FOOTER */
+footer{
+background:var(--negro);
+text-align:center;
+padding:30px;
+margin-top:50px;
+font-size:14px;
+color:var(--crema2);
+}
+
+/* ANIMACION */
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* 📱 RESPONSIVE */
+@media(max-width:768px){
+
+.navbar{
+flex-wrap:wrap;
+}
+
+.navbar a{
+display:none;
+width:100%;
+text-align:center;
+padding:10px 0;
+}
+
+.navbar.activo a{
+display:block;
+background:var(--crema2);
+margin:5px 0;
+border-radius:10px;
+}
+
+.menu-toggle{
+display:block;
+}
+
+/* HERO */
+.hero{
+height:50vh;
+}
+
+.tituloHero{
+font-size:2rem;
+}
+
+.subtituloHero{
+font-size:0.9rem;
+}
+
+/* GRID */
+.contenedor{
+gap:20px;
+padding:20px;
+}
+}
