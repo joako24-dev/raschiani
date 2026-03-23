@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <meta charset="UTF-8">
-<title>raschiani|inicio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RASCHIANI | INICIO</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -45,10 +47,14 @@
 <h2>Carrito</h2>
 <ul id="listaCarrito"></ul>
 <p>Total: $<span id="total">0</span></p>
+<p class="importante">IMPORTANTE</p>
+<p id="mensajeCarrito">Al dar click en enviar pedido te enviara a un chat de instagram solo dale a pegar y su pedido estara listo <p>
 
-<button onclick="enviarPedido()">Enviar pedido</button>
-<button onclick="vaciarCarrito()">Vaciar</button>
-<button onclick="cerrarCarrito()">Cerrar</button>
+<div class="botones-carrito">
+    <button onclick="enviarPedido()">Enviar</button>
+    <button onclick="vaciarCarrito()">Vaciar</button>
+    <button onclick="cerrarCarrito()">Cerrar</button>
+</div>
 </div>
 </div>
 
@@ -60,6 +66,15 @@
 <p id="modalTexto"></p>
 <button onclick="cerrarnotas()">Cerrar</button>
 </div>
+</div>
+<div class="social-float">
+    <a href="https://instagram.com/raschiani_perfumeria" target="_blank" class="icon ig">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://tiktok.com/@TUUSUARIO" target="_blank" class="icon tt">
+        <i class="fab fa-tiktok"></i>
+    </a>
 </div>
 <footer>
     © 2026 · raschiani perfumeria todos los derechos reservados 

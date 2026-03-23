@@ -12,9 +12,9 @@ const masvendidos = [
 ]
 
 const masculinos = [
-{nombre:"asad elixir",precio:50000,notas:"tabaco, vainilla y pimienta rosa", imagen:"img/asad-elixir.png"},
-{nombre:"asad elixir",precio:50000,notas:"tabaco, vainilla y pimienta rosa", imagen:"img/asad-elixir.png"},
-{nombre:"asad elixir",precio:50000,notas:"tabaco, vainilla y pimienta rosa", imagen:"img/asad-elixir.png"},
+{nombre:"Asad Elixir",precio:50000,notas:"tabaco, vainilla y pimienta rosa", imagen:"img/asad-elixir.png"},
+{nombre:"Liquid Burn",precio:80000,notas:"tabaco, vainilla y pimienta rosa ", imagen:"img/liquidburn.jpg"},
+{nombre:"Coconut Leche",precio:99000,notas:"tabaco, vainilla y pimienta rosa", imagen:"img/asad-elixir.png"},
 {nombre:"asad elixir",precio:50000,notas:"tabaco, vainilla y pimienta rosa", imagen:"img/asad-elixir.png"},
 {nombre:"asad elixir",precio:50000,notas:"tabaco, vainilla y pimienta rosa", imagen:"img/asad-elixir.png"},
 {nombre:"asad elixir",precio:50000,notas:"tabaco, vainilla y pimienta rosa", imagen:"img/asad-elixir.png"},
@@ -24,7 +24,7 @@ const masculinos = [
 
 const femeninos = [
 {nombre:"lattafa mayar",precio:56000,notas:"lichi, frambuesa y hojas de violeta; peonía, rosa blanca y jazmín; fondo de almizcle y vainilla", imagen:"img/mayar.png"},
-{nombre:"lattafa mayar",precio:56000,notas:"lichi, frambuesa y hojas de violeta; peonía, rosa blanca y jazmín; fondo de almizcle y vainilla", imagen:"img/mayar.png"},
+{nombre:"coco nut",precio:56000,notas:"lichi, frambuesa y hojas de violeta; peonía, rosa blanca y jazmín; fondo de almizcle y vainilla", imagen:"img/coconut.jpg"},
 {nombre:"lattafa mayar",precio:56000,notas:"lichi, frambuesa y hojas de violeta; peonía, rosa blanca y jazmín; fondo de almizcle y vainilla", imagen:"img/mayar.png"},
 {nombre:"lattafa mayar",precio:56000,notas:"lichi, frambuesa y hojas de violeta; peonía, rosa blanca y jazmín; fondo de almizcle y vainilla", imagen:"img/mayar.png"},
 {nombre:"lattafa mayar",precio:56000,notas:"lichi, frambuesa y hojas de violeta; peonía, rosa blanca y jazmín; fondo de almizcle y vainilla", imagen:"img/mayar.png"},
@@ -62,15 +62,17 @@ div.innerHTML += `
 <div class="card">
 <img src="${item.imagen}">
 <h3>${item.nombre}</h3>
-<div>$${item.precio}</div>
+<div class="precio">$${item.precio}</div>
 
 <button class="detalles" onclick="vernotas('${item.nombre}','${item.notas}','${item.imagen}')">
 Ver notas
 </button>
 
-<button class="agregar" onclick="agregarCarrito('${item.nombre}',${item.precio},'${item.imagen}')">
-Agregar
+<button class="agregar" onclick="agregarCarrito('${item.nombre}',${item.precio},'${item.imagen}', this)">
+    <span class="texto">Agregar al carrito</span>
+    <span class="carrito-icono-btn">🛒</span>
 </button>
+
 
 </div>
 `
@@ -86,19 +88,28 @@ crearCatalogo(unisex,"uni")
 
 // ================== AGREGAR AL CARRITO ==================
 
-function agregarCarrito(nombre,precio,imagen){
+function agregarCarrito(nombre,precio,imagen, boton){
 
-if(carrito[nombre]){
-carrito[nombre].cantidad++
-}else{
-carrito[nombre]={
-precio:precio,
-cantidad:1,
-imagen:imagen
-}
-}
+  // 🔥 animación carrito
+    if(boton){
+        boton.classList.add("animado")
 
-actualizarCarrito()
+        setTimeout(()=>{
+        boton.classList.remove("animado")
+        }, 600)
+    }
+
+    if(carrito[nombre]){
+        carrito[nombre].cantidad++
+    }else{
+        carrito[nombre]={
+        precio:precio,
+        cantidad:1,
+        imagen:imagen
+        }
+    }
+
+    actualizarCarrito()
 }
 
 // ================== ACTUALIZAR CARRITO ==================
@@ -116,9 +127,17 @@ total+=datos.precio*datos.cantidad
 contador+=datos.cantidad
 }
 
-// ACTUALIZAR CONTADOR (SI EXISTE)
 let contadorHTML = document.getElementById("contador")
-if(contadorHTML) contadorHTML.innerText = contador
+if(contadorHTML){
+    contadorHTML.innerText = contador
+
+  // 🔥 animación rebote
+    contadorHTML.classList.add("animado")
+
+    setTimeout(()=>{
+        contadorHTML.classList.remove("animado")
+    }, 400)
+}
 
 // ACTUALIZAR MODAL (SI EXISTE)
 if(lista){
@@ -188,21 +207,50 @@ actualizarCarrito()
 
 function enviarPedido(){
 
-let mensaje="Hola quiero pedir:%0A"
+let mensaje="Hola quiero pedir:\n"
 let total=0
 
 for(let item in carrito){
-
 let datos=carrito[item]
 
-mensaje+=`${item} x${datos.cantidad} - $${datos.precio*datos.cantidad}%0A`
+mensaje+=`${item} x${datos.cantidad} - $${datos.precio*datos.cantidad}\n`
 total+=datos.precio*datos.cantidad
 }
 
-mensaje+=`%0ATotal: $${total}`
+mensaje+=`\nTotal: $${total}`
 
-window.open(`https://wa.me/1159627747?text=${mensaje}`)
+// COPIAR AL PORTAPAPELES
+navigator.clipboard.writeText(mensaje)
+
+// ABRIR INSTAGRAM
+window.open(`https://ig.me/m/raschiani_perfumeria`)
+
+alert("Pedido copiado. Pegalo en Instagram 💬")
 }
+// ================== CERRAR MODAL AL HACER CLICK AFUERA ==================
+
+window.addEventListener("click", function(e){
+
+    const modalCarrito = document.getElementById("modalCarrito")
+    const modalNotas = document.getElementById("modalnotas")
+
+    // cerrar carrito
+    if(e.target === modalCarrito){
+        cerrarCarrito()
+    }
+
+    // 🔥 cerrar notas
+    if(e.target === modalNotas){
+        cerrarnotas()
+    }
+
+})
+document.addEventListener("keydown", function(e){
+    if(e.key === "Escape"){
+        cerrarCarrito()
+        cerrarnotas()
+    }
+})
 
 // ================== INICIAR ==================
 
