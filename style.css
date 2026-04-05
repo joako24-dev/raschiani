@@ -76,8 +76,10 @@ transform:translateY(-2px);
 /* ================= HERO ================= */
 .hero{
 min-height:100vh;
+width:100%;
+height:80vh; /* 🔥 se adapta a pantalla */
 background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-url("img/hero.png");
+url("img/hero.png")center center no-repeat;
 background-size:cover;
 background-position:center;
 display:flex;
@@ -87,6 +89,15 @@ text-align:center;
 color:white;
 padding:20px;
 position:relative; /* 👈 IMPORTANTE */
+}
+
+@media (max-width:768px){
+
+.hero{
+background-size:contain; /* muestra completa */
+background-color:#000; /* relleno */
+}
+
 }
 
 .tituloHero{
