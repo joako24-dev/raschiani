@@ -94,7 +94,7 @@ position:relative; /* 👈 IMPORTANTE */
 @media (max-width:768px){
 
 .hero{
-background:url("img/hero2.png") center/cover no-repeat;
+background:url("img/hero2.jpg") center/cover no-repeat;
 height:60vh;
 }
 
