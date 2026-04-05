@@ -94,8 +94,8 @@ position:relative; /* 👈 IMPORTANTE */
 @media (max-width:768px){
 
 .hero{
-background-size:contain; /* muestra completa */
-background-color:#000; /* relleno */
+background:url("img/hero2.png") center/cover no-repeat;
+height:60vh;
 }
 
 }
