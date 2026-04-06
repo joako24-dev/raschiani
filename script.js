@@ -1,7 +1,11 @@
 // ================== PRODUCTOS ==================
 
 const masvendidos = [
+{nombre:"Khamrah",precio:66000,notas:"", imagen:"lattafa/khamrah.jpeg"},
 
+{nombre:"Vanilla Voyage",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433424/voyage_dzoj4n.webp"},
+
+{nombre:"Amber Gold",precio:110000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434189/gold_b1ik82.webp"},
 
 
 ]
