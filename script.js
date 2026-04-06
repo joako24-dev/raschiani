@@ -7,201 +7,200 @@ const masvendidos = [
 ]
 
 const rasasi = [ 
-{nombre:"Hawas Fire",precio:90000,notas:"", imagen:"rasasi/fire.jpg"},
+{nombre:"Hawas Fire",precio:90000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433882/fire_jxhdvp.webp"},
 
-{nombre:"Hawas Ice",precio:92000,notas:"", imagen:"rasasi/ice.jpg"},
+{nombre:"Hawas Ice",precio:92000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433921/ice_f0jcf9.webp"},
 
-{nombre:"Hawas Malibu",precio:105000,notas:"", imagen:"rasasi/malibu.jpg"},
+{nombre:"Hawas Malibu",precio:105000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433917/malibu_bpjtb6.webp"},
 
-{nombre:"Hawas Kobra",precio:107000,notas:"", imagen:"rasasi/kobra.jpg"},
+{nombre:"Hawas Kobra",precio:107000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433919/kobra_weywkl.webp"},
 
-{nombre:"Hawas Black",precio:74000,notas:"", imagen:"rasasi/black.jpg"},
+{nombre:"Hawas Black",precio:74000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433911/black_gudi6v.webp"},
 
-{nombre:"Hawas Tropical",precio:105000,notas:"", imagen:"rasasi/tropical.jpg"},
+{nombre:"Hawas Tropical",precio:105000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433914/tropical_b6a2oa.webp"},
 
 ]
 
 const asrar = [ 
-{nombre:"Vanilla Voyage",precio:95000,notas:"", imagen:"asrar/voyage.jpg"},
+{nombre:"Vanilla Voyage",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433424/voyage_dzoj4n.webp"},
 
-{nombre:"Coffe Blend ",precio:95000,notas:"", imagen:"asrar/coffe.jpeg"},
+{nombre:"Coffe Blend ",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433016/coffe_deuywn.jpg"},
 
-{nombre:"Hikaya",precio:95000,notas:"", imagen:"asrar/hikaya.jpeg"},
+{nombre:"Hikaya",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433017/hikaya_jxuvz0.jpg"},
 
-{nombre:"Rey",precio:95000,notas:"", imagen:"asrar/rey.jpeg"},
+{nombre:"Rey",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433017/rey_c8nhbm.jpg"},
 
 ]
 
 const bharara = [
-{nombre:"Aqua Dubai",precio:110000,notas:"", imagen:"bharara/aquadubai.jpg"},
+{nombre:"Aqua Dubai",precio:110000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434180/aquadubai_as9ija.webp"},
 
-{nombre:"Amber Gold",precio:110000,notas:"", imagen:"bharara/gold.jpg"},
+{nombre:"Amber Gold",precio:110000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434189/gold_b1ik82.webp"},
 
-{nombre:"Double Bleu",precio:99000,notas:"", imagen:"bharara/bleu.jpg"},
+{nombre:"Double Bleu",precio:99000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434192/bleu_c7q2tw.webp"},
 
-{nombre:"Bharara King",precio:99000,notas:"", imagen:"bharara/bhararaking.jpg"},
+{nombre:"Bharara King",precio:99000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434195/bhararaking_sb1sri.webp"},
 
-{nombre:"Pistacho Kunafa",precio:99000,notas:"", imagen:"bharara/kunafa.jpeg"},
+{nombre:"Pistacho Kunafa",precio:99000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434186/kunafa_rnzige.webp"},
 
 ]
 const armaf = [
-{nombre:"Oddysey Homme",precio:72000,notas:".", imagen:"armaf/oddyseyhomme.jpg"},
+{nombre:"Oddysey Homme",precio:72000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435107/oddyseyhomme_tl6lyi.webp"},
 
-{nombre:"Oddysey Aqua",precio:79000,notas:".", imagen:"armaf/oddyseyaqua.jpg"},
+{nombre:"Oddysey Aqua",precio:79000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435101/oddyseyaqua_apglrm.webp"},
 
-{nombre:"Oddysey Bhaamas",precio:82000,notas:".", imagen:"armaf/oddyseybhaamas.jpg"},
+{nombre:"Oddysey Bhaamas",precio:82000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435110/oddyseybhaamas_cem5sv.webp"},
 
-{nombre:"Oddysey Spectra",precio:82000,notas:".", imagen:"armaf/spectra.jpg"},
+{nombre:"Oddysey Spectra",precio:82000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435087/spectra_n84hrc.webp"},
 
-{nombre:"Oddysey Mandarin",precio:82000,notas:".", imagen:"armaf/sky.jpeg"},
+{nombre:"Oddysey Mandarin",precio:82000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435091/sky_h5o15a.webp"},
 
-{nombre:"Club Nuit Intense Man",precio:70000,notas:".", imagen:"armaf/intenseman.jpg"},
+{nombre:"Club Nuit Intense Man",precio:70000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435444/intenseman_1_zpypnk.webp"},
 
-{nombre:"Club Nuit Urban Elixir",precio:80000,notas:".", imagen:"armaf/urban.jpg"},
+{nombre:"Club Nuit Urban Elixir",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435455/urban_tv2ggk.webp"},
 
-{nombre:"Club Nuit Sillage",precio:82000,notas:".", imagen:"armaf/sillage.jpg"},
+{nombre:"Club Nuit Sillage",precio:82000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435094/sillage_arnkid.webp"},
 
-{nombre:"Club Nuit Iconic",precio:86000,notas:".", imagen:"armaf/iconic.jpg"},
+{nombre:"Club Nuit Iconic",precio:86000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435126/iconic_sixywj.webp"},
 
-{nombre:"Club Nuit Maleka",precio:81000,notas:".", imagen:"armaf/maleka.jpg"},
+{nombre:"Club Nuit Maleka",precio:81000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435114/maleka_aoucve.webp "},
 
-{nombre:"Terra",precio:89000,notas:"", imagen:"armaf/terra.jpg"},
+{nombre:"Terra",precio:89000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435081/terra_nwlqz0.webp"},
 
-{nombre:"Pacific Aura",precio:80000,notas:"", imagen:"armaf/pacific.jpg"},
+{nombre:"Pacific Aura",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435098/pacific_jiqmqb.webp"},
 
-{nombre:"Italia",precio:92000,notas:"", imagen:"armaf/italia.jpg"},
+{nombre:"Italia",precio:92000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435118/italia_khltzl.webp"},
 
-{nombre:"Acuatica",precio:92000,notas:"", imagen:"armaf/acuatica.jpeg"},
+{nombre:"Acuatica",precio:92000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435122/acuatica_bism0p.webp"},
 
-{nombre:"Beach Party",precio:92000,notas:"", imagen:"armaf/beach.jpeg"},
+{nombre:"Beach Party",precio:92000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435078/beach_qghkab.webp"},
 
 ]
 
 const afnan = [ 
-{nombre:"9 PM Elixir",precio:80000,notas:".", imagen:"afnan/9pmelixir.webp"},
+{nombre:"9 PM Elixir",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435732/9pmelixir_r4lfar.webp"},
 
-{nombre:"9 PM ",precio:80000,notas:".", imagen:"afnan/9pm.jpeg"},
+{nombre:"9 PM ",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435736/9pm_ahuhxq.webp"},
 
-{nombre:"9 PM Rebel",precio:80000,notas:".", imagen:"afnan/9pmrebel.webp"},
+{nombre:"9 PM Rebel",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435728/9pmrebel_omamyc.webp"},
 
-{nombre:"9 AM Dive",precio:78000,notas:"", imagen:"afnan/9am.webp"},
+{nombre:"9 AM Dive",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435740/9am_wsft3l.webp"},
 
-{nombre:"9 PM Night Out",precio:78000,notas:"", imagen:"afnan/out.webp"},
+{nombre:"9 PM Night Out",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435748/out_x2eqtu.webp"},
 
-{nombre:"Supremacy Collector",precio:78000,notas:"", imagen:"afnan/supremacy.webp"},
+{nombre:"Supremacy Collector",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435743/supremacy_qyopfk.webp"},
 
-{nombre:"Turathi Electric",precio:84000,notas:"", imagen:"afnan/electric.webp"},
-
+{nombre:"Turathi Electric",precio:84000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435724/electric_uxblcy.webp"},
 
 ]
 
 const Paris = [
-{nombre:"Minya Coco Lush",precio:60000,notas:"", imagen:"paris/minya.jpg"},
+{nombre:"Minya Coco Lush",precio:60000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437762/minya_ebjd98.webp"},
 
-{nombre:"Fayora",precio:89000,notas:"", imagen:"paris/fayora.jpg"},
+{nombre:"Fayora",precio:89000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437019/fayora_jmvzbz.webp"},
 
-{nombre:"Khair Confection",precio:73000,notas:"", imagen:"paris/khair.jpg"},
+{nombre:"Khair Confection",precio:73000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437029/khair_ppqsvi.webp"},
 
-{nombre:"Qissa Delicius",precio:55000,notas:"", imagen:"paris/qissa.jpg"},
+{nombre:"Qissa Delicius",precio:55000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437043/qissa_l4xubf.webp"},
 
-{nombre:"Khair Pistacho",precio:75000,notas:"", imagen:"paris/pistacho.jpg"},
+{nombre:"Khair Pistacho",precio:75000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437038/pistacho_g3nzd7.webp"},
 
-{nombre:"Moscow Mule",precio:80000,notas:"", imagen:"paris/moscow.jpg"},
+{nombre:"Moscow Mule",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437033/moscow_w3gk1b.webp"},
 
-{nombre:"Banana Bliss",precio:80000,notas:"", imagen:"paris/banana.jpg"},
+{nombre:"Banana Bliss",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437006/banana_vn9qxs.webp"},
 
-{nombre:"Wayfarer",precio:80000,notas:"", imagen:"paris/wayfarer.jpg"},
+{nombre:"Wayfarer",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775436999/wayfarer_n1nmie.webp"},
 
-{nombre:"Dulzura",precio:80000,notas:"", imagen:"paris/dulzura.jpg"},
+{nombre:"Dulzura",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437015/dulzura_edoecr.webp"},
 
-{nombre:"Khair Felicity",precio:80000,notas:"", imagen:"paris/felicity.jpeg"},
+{nombre:"Khair Felicity",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437024/felicity_h594hf.webp"},
 
-{nombre:"Marshmallow Blush",precio:80000,notas:"", imagen:"paris/blush.jpeg"},
+{nombre:"Marshmallow Blush",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437010/blush_rk55ql.webp"},
 
 ]
 
 const maison = [
-{nombre:"Salvo Elixir",precio:50000,notas:".", imagen:"maison/salvo.jpg"},
+{nombre:"Salvo Elixir",precio:50000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515001/salvo_bm10ye.webp"},
 
-{nombre:"Galactic Men",precio:55000,notas:".", imagen:"maison/galacticmen.jpg"},
+{nombre:"Galactic Men",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515009/galacticmen_fnankx.webp"},
 
-{nombre:"Luxe",precio:62000,notas:".", imagen:"maison/luxe.jpg"},
+{nombre:"Luxe",precio:62000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515007/luxe_swri1e.webp"},
 
-{nombre:"Luxe NY",precio:62000,notas:".", imagen:"maison/luxeny.jpg"},
+{nombre:"Luxe NY",precio:62000,notas:".", imagen:" https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515006/luxeny_usbw4f.webp"},
 
-{nombre:"Luxe Street",precio:62000,notas:".", imagen:"maison/luxestreet.jpg"},
+{nombre:"Luxe Street",precio:62000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515002/luxestreet_oswzc5.webp"},
 
-{nombre:"Eclipse",precio:69000,notas:".", imagen:"maison/eclipse.jpg"},
+{nombre:"Eclipse",precio:69000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515009/eclipse_pboy9n.webp"},
 
-{nombre:"La Vivacite Intensa",precio:58000,notas:".", imagen:"maison/vivacite.jpg"},
+{nombre:"La Vivacite Intensa",precio:58000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515001/vivacite_cdzhft.webp"},
 
-{nombre:"Intrude",precio:55000,notas:".", imagen:"maison/intrude.jpg"},
+{nombre:"Intrude",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515008/intrude_givsor.webp"},
 
-{nombre:"Leonie Intense",precio:55000,notas:".", imagen:"maison/leonie.jpg"},
+{nombre:"Leonie Intense",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515007/leonie_dwzkoe.webp"},
 
-{nombre:"Glacier Bold",precio:55000,notas:".", imagen:"maison/bold.jpeg"},
+{nombre:"Glacier Bold",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515010/bold_htyknd.webp"},
 
-{nombre:"Toscano Leather",precio:55000,notas:".", imagen:"maison/toscano.jpeg"},
+{nombre:"Toscano Leather",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515000/toscano_rgdv7f.webp"},
 
-{nombre:"Spectre Malachite",precio:55000,notas:".", imagen:"maison/spectre.jpeg"},
+{nombre:"Spectre Malachite",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515000/spectre_nfwl4k.webp"},
 
-{nombre:"Alora",precio:55000,notas:".", imagen:"maison/alora.jpeg"},
+{nombre:"Alora",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515011/alora_dqch5x.webp"},
 
-{nombre:"Jean Love Vibe",precio:55000,notas:".", imagen:"maison/vibe.jpeg"},
+{nombre:"Jean Love Vibe",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515000/vibe_obhyso.webp"},
 
-{nombre:"Your Touch",precio:55000,notas:".", imagen:"maison/your.jpeg"},
+{nombre:"Your Touch",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515011/your_x6d3o4.webp"},
 
-{nombre:"Your Touch Intense",precio:55000,notas:".", imagen:"maison/intense.jpeg"},
+{nombre:"Your Touch Intense",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515008/intense_eymn7y.webp"},
 ]
 
 const frenchavenue = [
-{nombre:"Vulcan Sable ",precio:80000,notas:".", imagen:"french/vulcansable.jpg"},
+{nombre:"Vulcan Sable ",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517859/vulcansable_gckisb.webp"},
 
-{nombre:"Vulcan Feu ",precio:95000,notas:"", imagen:"french/vulcanfeu.jpg"},
+{nombre:"Vulcan Feu ",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517860/vulcanfeu_mzbbjl.webp"},
 
-{nombre:"Vulkan Black",precio:95000,notas:".", imagen:"french/vulcanblack.jpg"},
+{nombre:"Vulkan Black",precio:95000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517849/vulcanblack_yognvd.webp"},
 
-{nombre:"Liquid Burn",precio:85000,notas:".", imagen:"french/liquidburn.jpg"},
+{nombre:"Liquid Burn",precio:85000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517863/liquidburn_wbpnqn.webp"},
 
-{nombre:"Liquid Limited Edition",precio:85000,notas:".", imagen:"french/limited.jpg"},
+{nombre:"Liquid Limited Edition",precio:85000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516897/limited_cz4y97.jpg"},
 
-{nombre:"Cocoa Morado",precio:85000,notas:".", imagen:"french/cocoa.jpg"},
+{nombre:"Cocoa Morado",precio:85000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517864/cocoa_g0u2qp.webp"},
 
-{nombre:"Spectre Ghost ",precio:80000,notas:".", imagen:"french/spectreghost.jpg"},
+{nombre:"Spectre Ghost ",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517851/spectreghost_vdd9fq.webp"},
 
-{nombre:"Atlantis Extait",precio:96000,notas:"", imagen:"french/atlantisextai.jpg"},
+{nombre:"Atlantis Extait",precio:96000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517858/atlantisextai_gmxo2y.webp"},
 
-{nombre:"Aether Extrait",precio:95000,notas:"", imagen:"french/aetherextrait.jpg"},
+{nombre:"Aether Extrait",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517848/aetherextrait_q8enqv.webp"},
 
-{nombre:"Forbidden Fruit ",precio:110000,notas:"", imagen:"french/forbiddenfruit.jpg"},
+{nombre:"Forbidden Fruit ",precio:110000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517856/forbiddenfruit_ogi428.webp"},
 
-{nombre:"Magnetiq",precio:110000,notas:"", imagen:"french/magnetiq.jpg"},
+{nombre:"Magnetiq",precio:110000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517862/magnetiq_aiitko.webp"},
 
-{nombre:"Royal Blend",precio:49000,notas:"", imagen:"french/royal.jpg"},
+{nombre:"Royal Blend",precio:49000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517853/royal_iebiih.webp"},
 
-{nombre:"Royal Blend Negro",precio:49000,notas:"", imagen:"french/negro.jpeg"},
+{nombre:"Royal Blend Negro",precio:49000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516898/negro_ao6ts7.jpg"},
 
-{nombre:"Proud of You",precio:49000,notas:"", imagen:"french/proud.jpg"},
+{nombre:"Proud of You",precio:49000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517853/proud_igplad.webp"},
 
-{nombre:"Meringue",precio:80000,notas:"", imagen:"french/meringue.jpg"},
+{nombre:"Meringue",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517855/meringue_bfecc0.webp"},
 
-{nombre:"Azzure Oud",precio:75000,notas:"", imagen:"french/azzure.jpg"},
+{nombre:"Azzure Oud",precio:75000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517848/azzure_nowbhd.webp"},
 
-{nombre:"Veneno",precio:103000,notas:"", imagen:"french/veneno.jpg"},
+{nombre:"Veneno",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517850/veneno_vnyxda.webp"},
 
-{nombre:"Grecia",precio:103000,notas:"", imagen:"french/grecia.jpg"},
+{nombre:"Grecia",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517856/grecia_ik6asc.webp"},
 
-{nombre:"Creme Of Clouds",precio:103000,notas:"", imagen:"french/clouds.jpg"},
+{nombre:"Creme Of Clouds",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517845/clouds_spse0s.webp"},
 
-{nombre:"Elysia Vanila ",precio:103000,notas:"", imagen:"french/vanila.jpeg"},
+{nombre:"Elysia Vanila ",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516893/vanila_gbhlg1.jpg"},
 
-{nombre:"Elysia Vanila Sugar",precio:103000,notas:"", imagen:"french/sugar.jpeg"},
+{nombre:"Elysia Vanila Sugar",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516892/sugar_jnfgpz.jpg"},
 
-{nombre:"Veneno Bianco",precio:103000,notas:"", imagen:"french/bianco.jpeg"},
+{nombre:"Veneno Bianco",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517846/bianco_pc21s7.webp"},
 
-{nombre:"Safari Breeze",precio:103000,notas:"", imagen:"french/breeze.jpeg"},
+{nombre:"Safari Breeze",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517846/breeze_hfmjg6.webp"},
 
-{nombre:"Coconut Leche",precio:103000,notas:"", imagen:"french/Leche.jpeg"},
+{nombre:"Coconut Leche",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516893/leche_k7oxco.jpg"},
 
 ]
 
