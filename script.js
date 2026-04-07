@@ -1,7 +1,7 @@
 // ================== PRODUCTOS ==================
 
 const masvendidos = [
-{nombre:"Khamrah",precio:66000,notas:"", imagen:"lattafa/khamrah.jpeg"},
+{nombre:"Khamrah",precio:66000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522317/khamrah_ntd1ev.jpg"},
 
 {nombre:"Vanilla Voyage",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433424/voyage_dzoj4n.webp"},
 
@@ -209,85 +209,85 @@ const frenchavenue = [
 ]
 
 const Lattafa = [
-{nombre:"Yara Elixir",precio:60000,notas:"", imagen:"lattafa/yaraelixir.jpg"},
+{nombre:"Yara Elixir",precio:60000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523548/yaraelixir_jqrx6g.webp"},
 
-{nombre:"Yara Candy",precio:60000,notas:"", imagen:"lattafa/yaracandy.jpg"},
+{nombre:"Yara Candy",precio:60000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523549/yaracandy_ouytl6.webp"},
 
-{nombre:"Yara Tous",precio:62000,notas:"", imagen:"lattafa/yaratous.jpg"},
+{nombre:"Yara Tous",precio:62000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523546/yaratous_admksi.webp"},
 
-{nombre:"Eclaire",precio:76000,notas:"", imagen:"lattafa/eclaire.jpg"},
+{nombre:"Eclaire",precio:76000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523567/eclaire_ajxgcd.webp"},
 
-{nombre:"Eclaire Pistacho",precio:74000,notas:"", imagen:"lattafa/eclairep.jpg"},
+{nombre:"Eclaire Pistacho",precio:74000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522332/eclairep_et7vvf.jpg"},
 
-{nombre:"Asad Elixir",precio:80000,notas:".", imagen:"lattafa/asadelixir.jpg"},
+{nombre:"Asad Elixir",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523537/asadelixir_ybhwmy.webp"},
 
-{nombre:"Asad Burbon",precio:75000,notas:".", imagen:"lattafa/asadburnon.jpg"},
+{nombre:"Asad Burbon",precio:75000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523545/asadburnon_ri5zbf.webp"},
 
-{nombre:"Asad Zanibar",precio:75000,notas:".", imagen:"lattafa/asadzansibar.jpg"},
+{nombre:"Asad Zanibar",precio:75000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523535/asadzansibar_le2l9x.webp"},
 
-{nombre:"Asad Men",precio:75000,notas:".", imagen:"lattafa/asadmen.jpg"},
+{nombre:"Asad Men",precio:75000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523537/asadmen_om2s2q.webp"},
 
-{nombre:"Bade Al Oud Amethyst",precio:64000,notas:"", imagen:"lattafa/amethyst.jpg"},
+{nombre:"Bade Al Oud Amethyst",precio:64000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523539/amethyst_scpvd3.webp"},
 
-{nombre:"Khamrah Dunkan",precio:66000,notas:"", imagen:"lattafa/dunkan.jpg"},
+{nombre:"Khamrah Dunkan",precio:66000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523578/dunkan_hmfpiw.webp"},
 
-{nombre:"Khamrah",precio:66000,notas:"", imagen:"lattafa/khamrah.jpeg"},
+{nombre:"Khamrah",precio:66000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522317/khamrah_ntd1ev.jpg"},
 
-{nombre:"Khamrah Qahwa",precio:66000,notas:"", imagen:"lattafa/qahwa.jpeg"},
+{nombre:"Khamrah Qahwa",precio:66000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522320/qahwa_gvx4iw.jpg"},
 
-{nombre:"Bade Al Oud Honor",precio:68000,notas:"", imagen:"lattafa/honor.jpg"},
+{nombre:"Bade Al Oud Honor",precio:68000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522327/honor_pffqsf.jpg"},
 
-{nombre:"Oud For Glory",precio:64000,notas:"", imagen:"lattafa/glory.jpg"},
+{nombre:"Oud For Glory",precio:64000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522330/glory_cjunnk.jpg"},
 
-{nombre:"Bade Al Oud Sublime",precio:64000,notas:"", imagen:"lattafa/sublime.jpg"},
+{nombre:"Bade Al Oud Sublime",precio:64000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523553/sublime_noi42l.webp"},
 
-{nombre:"Noble Blush",precio:64000,notas:"", imagen:"lattafa/blush.jpg"},
+{nombre:"Noble Blush",precio:64000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523573/blush_1_oqd1qs.webp"},
 
-{nombre:"Opulent Dubai",precio:70000,notas:"", imagen:"lattafa/opulent.jpg"},
+{nombre:"Opulent Dubai",precio:70000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522323/opulent_z403yl.jpg"},
 
-{nombre:"Liam Blue Shine",precio:78000,notas:"", imagen:"lattafa/liam.jpg"},
+{nombre:"Liam Blue Shine",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523557/liam_phhyow.webp"},
 
-{nombre:"Nebras Elixir",precio:85000,notas:"", imagen:"lattafa/nebras.jpg"},
+{nombre:"Nebras Elixir",precio:85000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522342/nebras_ba6hko.jpg"},
 
-{nombre:"Eclaire Banoffi",precio:74000,notas:"", imagen:"lattafa/banoffi.jpg"},
+{nombre:"Eclaire Banoffi",precio:74000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523574/banoffi_j8twxl.webp"},
 
-{nombre:"His Confession",precio:78000,notas:"", imagen:"lattafa/his.jpg"},
+{nombre:"His Confession",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523560/His_ygtnvo.webp"},
 
-{nombre:"The Kingdom",precio:60000,notas:"", imagen:"lattafa/kingdom.jpg"},
+{nombre:"The Kingdom",precio:60000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523559/kingdom_jw1q04.webp"},
 
-{nombre:"Mayar Cherry Intense",precio:64000,notas:"", imagen:"lattafa/cherry.jpg"},
+{nombre:"Mayar Cherry Intense",precio:64000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523569/cherry_wi2uop.webp"},
 
-{nombre:"Musaman",precio:60000,notas:"", imagen:"lattafa/musaman.jpg"},
+{nombre:"Musaman",precio:60000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523555/musaman_q2tyrn.webp"},
 
-{nombre:"Qaed Al Foursan Unlimited",precio:50000,notas:"", imagen:"lattafa/foursan.jpg"},
+{nombre:"Qaed Al Foursan Unlimited",precio:50000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523565/foursan_yoxqut.webp"},
 
-{nombre:"Atlas",precio:78000,notas:"", imagen:"lattafa/atlas.jpg"},
+{nombre:"Atlas",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523576/atlas_wtxflp.webp"},
 
-{nombre:"Emaan",precio:78000,notas:"", imagen:"lattafa/emaan.jpg"},
+{nombre:"Emaan",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523567/emaan_jwh2he.webp"},
 
-{nombre:"Angham",precio:78000,notas:"", imagen:"lattafa/angham.jpg"},
+{nombre:"Angham",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523541/angham_ampr32.webp"},
 
-{nombre:"Fakhar Black",precio:78000,notas:"", imagen:"lattafa/fakharblack.jpg"},
+{nombre:"Fakhar Black",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523565/fakharblack_vcpph5.webp"},
 
-{nombre:"Fakhar Platin",precio:78000,notas:"", imagen:"lattafa/platin.jpeg"},
+{nombre:"Fakhar Platin",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522318/platin_riqymz.jpg"},
 
-{nombre:"Brioche Vainille",precio:78000,notas:"", imagen:"lattafa/brioche.jpg"},
+{nombre:"Brioche Vainille",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523571/brioche_uty5jt.webp"},
 
-{nombre:"Ameerat Arab",precio:78000,notas:"", imagen:"lattafa/arab.jpg"},
+{nombre:"Ameerat Arab",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523544/arab_rornro.webp"},
 
-{nombre:"Sakeena",precio:78000,notas:"", imagen:"lattafa/sakeena.jpg"},
+{nombre:"Sakeena",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523554/sakeena_gs4uee.webp"},
 
-{nombre:"Ansaam Gold",precio:78000,notas:"", imagen:"lattafa/ansaam.jpg"},
+{nombre:"Ansaam Gold",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523542/ansaam_hpjeoa.webp"},
 
-{nombre:"Now Women",precio:78000,notas:"", imagen:"lattafa/women.jpg"},
+{nombre:"Now Women",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523551/women_jhzg4v.webp"},
 
-{nombre:"Angham Second",precio:78000,notas:"", imagen:"lattafa/second.jpg"},
+{nombre:"Angham Second",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522313/second_piwtxt.jpg"},
 
-{nombre:"Dalal Lattafa",precio:78000,notas:"", imagen:"lattafa/dalal.jpg"},
+{nombre:"Dalal Lattafa",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522314/dalal_bnhsfk.jpg"},
 
-{nombre:"Habik",precio:78000,notas:"", imagen:"lattafa/habik.jpeg"},
+{nombre:"Habik",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522316/habik_ifldss.jpg"},
 
-{nombre:"Habik Fem",precio:78000,notas:"", imagen:"lattafa/fem.jpeg"},
+{nombre:"Habik Fem",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522315/fem_izvszo.jpg"},
 
 
 ]
