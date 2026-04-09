@@ -491,7 +491,6 @@ if(formaPago === "tarjeta"){
 precio = redondearMiles(datos.precio * 1.25)
 }
 
-
 mensaje+=`${item} x${datos.cantidad} - $${formatearPrecio(precio * datos.cantidad)}\n`
 total+=precio * datos.cantidad
 }
@@ -504,13 +503,24 @@ mensaje+=`\nForma de pago: Tarjeta (3 cuotas sin interés)`
 mensaje+=`\nForma de pago: Efectivo / Transferencia (25% OFF)`
 }
 
-// copiar
-navigator.clipboard.writeText(mensaje)
+// 🔥 NUEVA LÓGICA COMPATIBLE CON IPHONE
+if(navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(mensaje).then(()=>{
+        alert("Pedido copiado ✅ Ahora te llevo a Instagram")
+        window.open(`https://ig.me/m/raschiani_perfumeria`)
+    }).catch(()=>{
+        mostrarMensajeManual(mensaje)
+    })
+}else{
+    mostrarMensajeManual(mensaje)
+}
 
-// abrir instagram
-window.open(`https://ig.me/m/raschiani_perfumeria`)
+}
 
-alert("Pedido copiado. Pegalo en Instagram 💬")
+// 🔥 FUNCIÓN EXTRA (NO ROMPE NADA)
+function mostrarMensajeManual(mensaje){
+    prompt("Copiá tu pedido 👇", mensaje)
+    window.open(`https://ig.me/m/raschiani_perfumeria`)
 }
 // ================== CERRAR MODAL AL HACER CLICK AFUERA ==================
 
