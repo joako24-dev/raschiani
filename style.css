@@ -123,7 +123,7 @@ background: rgba(0, 0, 0, 0.5); /* 🔥 controla opacidad */
 
 @media (max-width:768px){
 .hero-img {
-content: url("img/hero-mobile.jpg"); /* 👈 la vertical */
+content: url("img/hero2.png"); /* 👈 la vertical */
 }
 }
 

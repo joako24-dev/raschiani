@@ -475,22 +475,42 @@ actualizarCarrito()
 
 // ================== ENVIAR WHATSAPP ==================
 
-function enviarPedido() {
-    let mensaje = "Hola, quiero hacer un pedido:\n\n";
+function enviarPedido(){
 
-    carrito.forEach(p => {
-        mensaje += `- ${p.nombre} x${p.cantidad}\n`;
-    });
+let formaPago = document.getElementById("formaPago").value
 
-    mensaje += `\nTotal: $${total}`;
+let mensaje="Hola quiero pedir:\n"
+let total = 0
 
-    // copiar automáticamente
-    navigator.clipboard.writeText(mensaje);
+for(let item in carrito){
+let datos=carrito[item]
 
-    // abrir instagram
-    window.open("https://www.instagram.com/direct/t/raschiani_perfumeria", "_blank");
+let precio = datos.precio
 
-    alert("Tu pedido ya está copiado. Solo pegalo en Instagram y enviá 🚀");
+if(formaPago === "tarjeta"){
+precio = redondearMiles(datos.precio * 1.25)
+}
+
+
+mensaje+=`${item} x${datos.cantidad} - $${formatearPrecio(precio * datos.cantidad)}\n`
+total+=precio * datos.cantidad
+}
+
+mensaje+=`\nTotal: $${total}`
+
+if(formaPago === "tarjeta"){
+mensaje+=`\nForma de pago: Tarjeta (3 cuotas sin interés)`
+}else{
+mensaje+=`\nForma de pago: Efectivo / Transferencia (25% OFF)`
+}
+
+// copiar
+navigator.clipboard.writeText(mensaje)
+
+// abrir instagram
+window.open(`https://ig.me/m/raschiani_perfumeria`)
+
+alert("Pedido copiado. Pegalo en Instagram 💬")
 }
 // ================== CERRAR MODAL AL HACER CLICK AFUERA ==================
 
