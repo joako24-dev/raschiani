@@ -1,7 +1,7 @@
 // ================== PRODUCTOS ==================
 
 const masvendidos = [
-{nombre:"Khamrah",precio:66000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522317/khamrah_ntd1ev.jpg"},
+{nombre:"Khamrah",precio:66000,notas:"hola hola  ", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522317/khamrah_ntd1ev.jpg"},
 
 {nombre:"Vanilla Voyage",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433424/voyage_dzoj4n.webp"},
 
@@ -11,283 +11,283 @@ const masvendidos = [
 ]
 
 const rasasi = [ 
-{nombre:"Hawas Fire",precio:90000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433882/fire_jxhdvp.webp"},
+{nombre:"Hawas Fire",precio:90000,notas:"Ámbar,Aromático,Mineral,Marino,Especiado suave,Floral blanco,Animálico,Salado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433882/fire_jxhdvp.webp"},
 
-{nombre:"Hawas Ice",precio:92000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433921/ice_f0jcf9.webp"},
+{nombre:"Hawas Ice",precio:92000,notas:"Afrutados,Cítrico,Dulce,Fresco,Aromático,Almizclado,Atalcado,Fresco especiado,Verde,Floral blanco", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433921/ice_f0jcf9.webp"},
 
-{nombre:"Hawas Malibu",precio:105000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433917/malibu_bpjtb6.webp"},
+{nombre:"Hawas Malibu",precio:105000,notas:"Cítrico,Afrutado,Tropical,Dulce,Ambarado,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433917/malibu_bpjtb6.webp"},
 
-{nombre:"Hawas Kobra",precio:107000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433919/kobra_weywkl.webp"},
+{nombre:"Hawas Kobra",precio:107000,notas:"Cítrico,Fresco especiado,Almizclado,Fresco,Amaderado,Ámbar,Canela,Atalcado,Cálido especiado,Verde", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433919/kobra_weywkl.webp"},
 
-{nombre:"Hawas Black",precio:74000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433911/black_gudi6v.webp"},
+{nombre:"Hawas Black",precio:74000,notas:"Amaderado,Cítrico,Musgoso,Terroso,Fresco especiado,Afrutado,Dulce,Pachulí,Aromático,Tropical", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433911/black_gudi6v.webp"},
 
-{nombre:"Hawas Tropical",precio:105000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433914/tropical_b6a2oa.webp"},
+{nombre:"Hawas Tropical",precio:105000,notas:"Dulce,Verde,Coco,Amaderado,Avainillado,Afrutados", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433914/tropical_b6a2oa.webp"},
 
 ]
 
 const asrar = [ 
-{nombre:"Vanilla Voyage",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433424/voyage_dzoj4n.webp"},
+{nombre:"Vanilla Voyage",precio:95000,notas:"Dulce,Avainillado,Gourmand,Ambarado,Almizclado,Floral suave,Cremoso", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433424/voyage_dzoj4n.webp"},
 
-{nombre:"Coffe Blend ",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433016/coffe_deuywn.jpg"},
+{nombre:"Coffe Blend",precio:95000,notas:"Dulce,Café,Avainillado,Gourmand,Caramelo,Especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433016/coffe_deuywn.jpg"},
 
-{nombre:"Hikaya",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433017/hikaya_jxuvz0.jpg"},
+{nombre:"Hikaya",precio:95000,notas:"Dulce,Ámbar,Almizclado,Caramelo,Avainillado,Rosa,Balsámico,Especiado,Amaderado,Animálico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433017/hikaya_jxuvz0.jpg"},
 
-{nombre:"Rey",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433017/rey_c8nhbm.jpg"},
+{nombre:"Rey",precio:95000,notas:"Amaderado,Ambarado,Dulce,Especiado,Aromático,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433017/rey_c8nhbm.jpg"},
 
 ]
 
 const bharara = [
-{nombre:"Aqua Dubai",precio:110000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434180/aquadubai_as9ija.webp"},
+{nombre:"Aqua Dubai",precio:110000,notas:"Cítrico,Afrutado,Verde,Aromático,Dulce,Almizclado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434180/aquadubai_as9ija.webp"},
 
-{nombre:"Amber Gold",precio:110000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434189/gold_b1ik82.webp"},
+{nombre:"Amber Gold",precio:110000,notas:"Dulce,Avainillado,Afrutado,Ambarado,Almizclado,Tropical", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434189/gold_b1ik82.webp"},
 
-{nombre:"Double Bleu",precio:99000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434192/bleu_c7q2tw.webp"},
+{nombre:"Double Bleu",precio:99000,notas:"Cítrico,Aromático,Amaderado,Fresco especiado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434192/bleu_c7q2tw.webp"},
 
-{nombre:"Bharara King",precio:99000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434195/bhararaking_sb1sri.webp"},
+{nombre:"Bharara King",precio:99000,notas:"Afrutado,Dulce,Amaderado,Ambarado,Almizclado,Tropical", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434195/bhararaking_sb1sri.webp"},
 
-{nombre:"Pistacho Kunafa",precio:99000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434186/kunafa_rnzige.webp"},
+{nombre:"Pistacho Kunafa",precio:99000,notas:"Dulce,Avainillado,Nueces,Cremoso,Gourmand,Atalcado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434186/kunafa_rnzige.webp"},
 
 ]
 const armaf = [
-{nombre:"Oddysey Homme",precio:72000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435107/oddyseyhomme_tl6lyi.webp"},
+{nombre:"Oddysey Homme",precio:72000,notas:"Ámbar,Cálido especiado,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435107/oddyseyhomme_tl6lyi.webp"},
 
-{nombre:"Oddysey Aqua",precio:79000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435101/oddyseyaqua_apglrm.webp"},
+{nombre:"Oddysey Aqua",precio:79000,notas:"Marino,Fresco,Cítrico,Aromático,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435101/oddyseyaqua_apglrm.webp"},
 
-{nombre:"Oddysey Bhaamas",precio:82000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435110/oddyseybhaamas_cem5sv.webp"},
+{nombre:"Oddysey Bhaamas",precio:82000,notas:"Dulce,Tropical,Avainillado,Afrutado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435110/oddyseybhaamas_cem5sv.webp"},
 
-{nombre:"Oddysey Spectra",precio:82000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435087/spectra_n84hrc.webp"},
+{nombre:"Oddysey Spectra",precio:82000,notas:"Dulce,Especiado,Amaderado,Avainillado,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435087/spectra_n84hrc.webp"},
 
-{nombre:"Oddysey Mandarin",precio:82000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435091/sky_h5o15a.webp"},
+{nombre:"Oddysey Mandarin",precio:82000,notas:"Cítrico,Dulce,Afrutado,Aromático,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435091/sky_h5o15a.webp"},
 
-{nombre:"Club Nuit Intense Man",precio:70000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435444/intenseman_1_zpypnk.webp"},
+{nombre:"Club Nuit Intense Man",precio:70000,notas:"Ámbar,Cítrico,Afrutado,Dulce,Animálico,Tropical", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435444/intenseman_1_zpypnk.webp"},
 
-{nombre:"Club Nuit Urban Elixir",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435455/urban_tv2ggk.webp"},
+{nombre:"Club Nuit Urban Elixir",precio:80000,notas:"Aromático,Amaderado,Fresco especiado,Cítrico,Ámbar", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435455/urban_tv2ggk.webp"},
 
-{nombre:"Club Nuit Sillage",precio:82000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435094/sillage_arnkid.webp"},
+{nombre:"Club Nuit Sillage",precio:82000,notas:"Cítrico,Almizclado,Amaderado,Fresco especiado,Atalcado,Aromático,Ámbar,Afrutados,Florales", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435094/sillage_arnkid.webp"},
 
-{nombre:"Club Nuit Iconic",precio:86000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435126/iconic_sixywj.webp"},
+{nombre:"Club Nuit Iconic",precio:86000,notas:"Cítrico,Amaderado,Aromático,Fresco especiado,Ámbar,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435126/iconic_sixywj.webp"},
 
-{nombre:"Club Nuit Maleka",precio:81000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435114/maleka_aoucve.webp "},
+{nombre:"Club Nuit Maleka",precio:81000,notas:"Dulce,Floral,Afrutado,Atalcado,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435114/maleka_aoucve.webp"},
 
-{nombre:"Terra",precio:89000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435081/terra_nwlqz0.webp"},
+{nombre:"Terra",precio:89000,notas:"Amaderado,Cítrico,Terroso,Aromático,Musgoso", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435081/terra_nwlqz0.webp"},
 
-{nombre:"Pacific Aura",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435098/pacific_jiqmqb.webp"},
+{nombre:"Pacific Aura",precio:80000,notas:"Marino,Cítrico,Aromático,Fresco,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435098/pacific_jiqmqb.webp"},
 
-{nombre:"Italia",precio:92000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435118/italia_khltzl.webp"},
+{nombre:"Italia",precio:92000,notas:"Cítrico,Aromático,Floral,Verde,Fresco", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435118/italia_khltzl.webp"},
 
-{nombre:"Acuatica",precio:92000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435122/acuatica_bism0p.webp"},
+{nombre:"Acuatica",precio:92000,notas:"Marino,Fresco,Cítrico,Verde,Ozónico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435122/acuatica_bism0p.webp"},
 
-{nombre:"Beach Party",precio:92000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435078/beach_qghkab.webp"},
+{nombre:"Beach Party",precio:92000,notas:"Tropical,Dulce,Coco,Afrutado,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435078/beach_qghkab.webp"},
 
 ]
 
 const afnan = [ 
-{nombre:"9 PM Elixir",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435732/9pmelixir_r4lfar.webp"},
+{nombre:"9 PM Elixir",precio:80000,notas:"Cálido especiado,Avainillado,Aromático,Fresco especiado,Cuero,Lavanda,Balsámico,Pachulí,Amaderado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435732/9pmelixir_r4lfar.webp"},
 
-{nombre:"9 PM ",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435736/9pm_ahuhxq.webp"},
+{nombre:"9 PM ",precio:80000,notas:"Dulce,Avainillado,Afrutado,Aromático,Cálido especiado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435736/9pm_ahuhxq.webp"},
 
-{nombre:"9 PM Rebel",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435728/9pmrebel_omamyc.webp"},
+{nombre:"9 PM Rebel",precio:80000,notas:"Afrutado,Dulce,Amaderado,Aromático,Ámbar,Tropical", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435728/9pmrebel_omamyc.webp"},
 
-{nombre:"9 AM Dive",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435740/9am_wsft3l.webp"},
+{nombre:"9 AM Dive",precio:78000,notas:"Marino,Cítrico,Aromático,Fresco,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435740/9am_wsft3l.webp"},
 
-{nombre:"9 PM Night Out",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435748/out_x2eqtu.webp"},
+{nombre:"9 PM Night Out",precio:78000,notas:"Dulce,Ambarado,Avainillado,Especiado,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435748/out_x2eqtu.webp"},
 
-{nombre:"Supremacy Collector",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435743/supremacy_qyopfk.webp"},
+{nombre:"Supremacy Collector",precio:78000,notas:"Amaderado,Ahumado,Afrutado,Cítrico,Musgoso,Ámbar", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435743/supremacy_qyopfk.webp"},
 
-{nombre:"Turathi Electric",precio:84000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435724/electric_uxblcy.webp"},
+{nombre:"Turathi Electric",precio:84000,notas:"Afrutado,Dulce,Ambarado,Almizclado,Fresco,Cítrico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435724/electric_uxblcy.webp"},
 
 ]
 
 const Paris = [
-{nombre:"Minya Coco Lush",precio:60000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437762/minya_ebjd98.webp"},
+{nombre:"Minya Coco Lush",precio:60000,notas:"Dulce,Afrutados,Florales,Almizclado,Floral blanco,Almendrado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437762/minya_ebjd98.webp"},
 
-{nombre:"Fayora",precio:89000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437019/fayora_jmvzbz.webp"},
+{nombre:"Fayora",precio:89000,notas:"Dulce,Afrutado,Floral,Avainillado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437019/fayora_jmvzbz.webp"},
 
-{nombre:"Khair Confection",precio:73000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437029/khair_ppqsvi.webp"},
+{nombre:"Khair Confection",precio:73000,notas:"Dulce,Avainillado,Atalcado,Amaderado,Afrutados,Acuático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437029/khair_ppqsvi.webp"},
 
-{nombre:"Qissa Delicius",precio:55000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437043/qissa_l4xubf.webp"},
+{nombre:"Qissa Delicius",precio:55000,notas:"Dulce,Avainillado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437043/qissa_l4xubf.webp"},
 
-{nombre:"Khair Pistacho",precio:75000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437038/pistacho_g3nzd7.webp"},
+{nombre:"Khair Pistachio",precio:75000,notas:"Dulce,Avainillado,Nueces,Cremoso,Atalcado,Amaderado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437038/pistacho_g3nzd7.webp"},
 
-{nombre:"Moscow Mule",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437033/moscow_w3gk1b.webp"},
+{nombre:"Moscow Mule",precio:80000,notas:"Cítrico,Fresco,Aromático,Especiado,Verde", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437033/moscow_w3gk1b.webp"},
 
-{nombre:"Banana Bliss",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437006/banana_vn9qxs.webp"},
+{nombre:"Banana Bliss",precio:80000,notas:"Dulce,Afrutado,Tropical,Avainillado,Cremoso", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437006/banana_vn9qxs.webp"},
 
-{nombre:"Wayfarer",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775436999/wayfarer_n1nmie.webp"},
+{nombre:"Wayfarer",precio:80000,notas:"Amaderado,Aromático,Cítrico,Especiado,Ámbar", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775436999/wayfarer_n1nmie.webp"},
 
-{nombre:"Dulzura",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437015/dulzura_edoecr.webp"},
+{nombre:"Dulzura",precio:80000,notas:"Dulce,Avainillado,Cremoso,Almizclado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437015/dulzura_edoecr.webp"},
 
-{nombre:"Khair Felicity",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437024/felicity_h594hf.webp"},
+{nombre:"Khair Felicity",precio:80000,notas:"Dulce,Floral,Avainillado,Afrutado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437024/felicity_h594hf.webp"},
 
-{nombre:"Marshmallow Blush",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437010/blush_rk55ql.webp"},
+{nombre:"Marshmallow Blush",precio:80000,notas:"Dulce,Afrutado,Almizclado,Cítrico,Floral blanco", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437010/blush_rk55ql.webp"},
 
 ]
 
 const maison = [
-{nombre:"Salvo Elixir",precio:50000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515001/salvo_bm10ye.webp"},
+{nombre:"Salvo Elixir",precio:50000,notas:"Ámbar,Amaderado,Fresco especiado,Avainillado,Cálido especiado,Dulce,Tabaco,Pachulí,Atalcado,Balsámico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515001/salvo_bm10ye.webp"},
 
-{nombre:"Galactic Men",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515009/galacticmen_fnankx.webp"},
+{nombre:"Galactic Men",precio:55000,notas:"Tabaco,Dulce,Ambarado,Avainillado,Gourmand,Amaderado,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515009/galacticmen_fnankx.webp"},
 
-{nombre:"Luxe",precio:62000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515007/luxe_swri1e.webp"},
+{nombre:"Luxe",precio:62000,notas:"Dulce,Amaderado,Avainillado,Ámbar,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515007/luxe_swri1e.webp"},
 
-{nombre:"Luxe NY",precio:62000,notas:".", imagen:" https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515006/luxeny_usbw4f.webp"},
+{nombre:"Luxe NY",precio:62000,notas:"Cítrico,Aromático,Amaderado,Fresco especiado,Ámbar", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515006/luxeny_usbw4f.webp"},
 
-{nombre:"Luxe Street",precio:62000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515002/luxestreet_oswzc5.webp"},
+{nombre:"Luxe Street",precio:62000,notas:"Aromático,Dulce,Ambarado,Amaderado,Especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515002/luxestreet_oswzc5.webp"},
 
-{nombre:"Eclipse",precio:69000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515009/eclipse_pboy9n.webp"},
+{nombre:"Eclipse",precio:69000,notas:"Amaderado,Ámbar,Aromático,Especiado,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515009/eclipse_pboy9n.webp"},
 
-{nombre:"La Vivacite Intensa",precio:58000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515001/vivacite_cdzhft.webp"},
+{nombre:"La Vivacite Intensa",precio:58000,notas:"Cítrico,Floral,Almizclado,Fresco,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515001/vivacite_cdzhft.webp"},
 
-{nombre:"Intrude",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515008/intrude_givsor.webp"},
+{nombre:"Intrude",precio:55000,notas:"Floral blanco,Dulce,Almizclado,Atalcado,Afrutado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515008/intrude_givsor.webp"},
 
-{nombre:"Leonie Intense",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515007/leonie_dwzkoe.webp"},
+{nombre:"Leonie Intense",precio:55000,notas:"Dulce,Avainillado,Floral,Atalcado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515007/leonie_dwzkoe.webp"},
 
-{nombre:"Glacier Bold",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515010/bold_htyknd.webp"},
+{nombre:"Glacier Bold",precio:55000,notas:"Cítrico,Aromático,Fresco,Amaderado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515010/bold_htyknd.webp"},
 
-{nombre:"Toscano Leather",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515000/toscano_rgdv7f.webp"},
+{nombre:"Toscano Leather",precio:55000,notas:"Cuero,Ahumado,Amaderado,Animalico,Ámbar", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515000/toscano_rgdv7f.webp"},
 
-{nombre:"Spectre Malachite",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515000/spectre_nfwl4k.webp"},
+{nombre:"Spectre Malachite",precio:55000,notas:"Amaderado,Especiado,Ámbar,Aromático,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515000/spectre_nfwl4k.webp"},
 
-{nombre:"Alora",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515011/alora_dqch5x.webp"},
+{nombre:"Alora",precio:55000,notas:"Dulce,Floral,Afrutado,Almizclado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515011/alora_dqch5x.webp"},
 
-{nombre:"Jean Love Vibe",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515000/vibe_obhyso.webp"},
+{nombre:"Jean Love Vibe",precio:55000,notas:"Dulce,Avainillado,Aromático,Ambarado,Especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515000/vibe_obhyso.webp"},
 
-{nombre:"Your Touch",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515011/your_x6d3o4.webp"},
+{nombre:"Your Touch",precio:55000,notas:"Aromático,Amaderado,Cítrico,Especiado,Ámbar", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515011/your_x6d3o4.webp"},
 
-{nombre:"Your Touch Intense",precio:55000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515008/intense_eymn7y.webp"},
+{nombre:"Your Touch Intense",precio:55000,notas:"Ambarado,Dulce,Especiado,Amaderado,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515008/intense_eymn7y.webp"},
 ]
 
 const frenchavenue = [
-{nombre:"Vulcan Sable ",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517859/vulcansable_gckisb.webp"},
+{nombre:"Vulcan Sable ",precio:80000,notas:"Avainillado,Dulce,Ambarado,Especiado,Balsámico,Cálido especiado,Aromático,Pachulí", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517859/vulcansable_gckisb.webp"},
 
-{nombre:"Vulcan Feu ",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517860/vulcanfeu_mzbbjl.webp"},
+{nombre:"Vulcan Feu ",precio:95000,notas:"Afrutado,Dulce,Floral,Especiado,Ambarado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517860/vulcanfeu_mzbbjl.webp"},
 
-{nombre:"Vulkan Black",precio:95000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517849/vulcanblack_yognvd.webp"},
+{nombre:"Vulkan Black",precio:95000,notas:"Especiado,Afrutado,Amaderado,Dulce,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517849/vulcanblack_yognvd.webp"},
 
-{nombre:"Liquid Burn",precio:85000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517863/liquidburn_wbpnqn.webp"},
+{nombre:"Liquid Brun",precio:85000,notas:"Dulce,Gourmand,Especiado,Avainillado,Floral,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517863/liquidburn_wbpnqn.webp"},
 
-{nombre:"Liquid Limited Edition",precio:85000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516897/limited_cz4y97.jpg"},
+{nombre:"Liquid Limited Edition",precio:85000,notas:"Dulce,Avainillado,Gourmand,Ambarado,Cremoso", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516897/limited_cz4y97.jpg"},
 
-{nombre:"Cocoa Morado",precio:85000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517864/cocoa_g0u2qp.webp"},
+{nombre:"Cocoa Morado",precio:85000,notas:"Dulce,Cacao,Avainillado,Almendrado,Afrutado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517864/cocoa_g0u2qp.webp"},
 
-{nombre:"Spectre Ghost ",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517851/spectreghost_vdd9fq.webp"},
+{nombre:"Spectre Ghost ",precio:80000,notas:"Dulce,Avainillado,Amaderado,Atalcado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517851/spectreghost_vdd9fq.webp"},
 
-{nombre:"Atlantis Extait",precio:96000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517858/atlantisextai_gmxo2y.webp"},
+{nombre:"Atlantis Extait",precio:96000,notas:"Cítrico,Tropical,Afrutado,Dulce,Ambarado,Acuático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517858/atlantisextai_gmxo2y.webp"},
 
-{nombre:"Aether Extrait",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517848/aetherextrait_q8enqv.webp"},
+{nombre:"Aether Extrait",precio:95000,notas:"Amaderado,Ambarado,Especiado,Aromático,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517848/aetherextrait_q8enqv.webp"},
 
-{nombre:"Forbidden Fruit ",precio:110000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517856/forbiddenfruit_ogi428.webp"},
+{nombre:"Forbidden Fruit ",precio:110000,notas:"Afrutado,Dulce,Gourmand,Floral,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517856/forbiddenfruit_ogi428.webp"},
 
-{nombre:"Magnetiq",precio:110000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517862/magnetiq_aiitko.webp"},
+{nombre:"Magnetiq",precio:110000,notas:"Dulce,Ambarado,Almizclado,Avainillado,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517862/magnetiq_aiitko.webp"},
 
-{nombre:"Royal Blend",precio:49000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517853/royal_iebiih.webp"},
+{nombre:"Royal Blend",precio:49000,notas:"Afrutado,Ahumado,Amaderado,Dulce,Cítrico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517853/royal_iebiih.webp"},
 
-{nombre:"Royal Blend Negro",precio:49000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516898/negro_ao6ts7.jpg"},
+{nombre:"Royal Blend Negro",precio:49000,notas:"Especiado,Amaderado,Cuero,Ambarado,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516898/negro_ao6ts7.jpg"},
 
-{nombre:"Proud of You",precio:49000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517853/proud_igplad.webp"},
+{nombre:"Proud of You",precio:49000,notas:"Dulce,Avainillado,Aromático,Ambarado,Especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517853/proud_igplad.webp"},
 
-{nombre:"Meringue",precio:80000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517855/meringue_bfecc0.webp"},
+{nombre:"Meringue",precio:80000,notas:"Dulce,Avainillado,Cremoso,Atalcado,Azucarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517855/meringue_bfecc0.webp"},
 
-{nombre:"Azzure Oud",precio:75000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517848/azzure_nowbhd.webp"},
+{nombre:"Azzure Oud",precio:75000,notas:"Oud,Amaderado,Ambarado,Especiado,Balsámico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517848/azzure_nowbhd.webp"},
 
-{nombre:"Veneno",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517850/veneno_vnyxda.webp"},
+{nombre:"Veneno",precio:103000,notas:"Dulce,Ambarado,Avainillado,Especiado,Licor", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517850/veneno_vnyxda.webp"},
 
-{nombre:"Grecia",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517856/grecia_ik6asc.webp"},
+{nombre:"Grecia",precio:103000,notas:"Floral,Dulce,Afrutado,Almizclado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517856/grecia_ik6asc.webp"},
 
-{nombre:"Creme Of Clouds",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517845/clouds_spse0s.webp"},
+{nombre:"Creme Of Clouds",precio:103000,notas:"Dulce,Cremoso,Avainillado,Almizclado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517845/clouds_spse0s.webp"},
 
-{nombre:"Elysia Vanila ",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516893/vanila_gbhlg1.jpg"},
+{nombre:"Elysia Vanila ",precio:103000,notas:"Dulce,Avainillado,Ambarado,Cremoso,Floral", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516893/vanila_gbhlg1.jpg"},
 
-{nombre:"Elysia Vanila Sugar",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516892/sugar_jnfgpz.jpg"},
+{nombre:"Elysia Vanila Sugar",precio:103000,notas:"Dulce,Azucarado,Avainillado,Gourmand,Cremoso", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516892/sugar_jnfgpz.jpg"},
 
-{nombre:"Veneno Bianco",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517846/bianco_pc21s7.webp"},
+{nombre:"Veneno Bianco",precio:103000,notas:"Dulce,Cremoso,Avainillado,Floral,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517846/bianco_pc21s7.webp"},
 
-{nombre:"Safari Breeze",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517846/breeze_hfmjg6.webp"},
+{nombre:"Safari Breeze",precio:103000,notas:"Cítrico,Fresco,Verde,Aromático,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517846/breeze_hfmjg6.webp"},
 
-{nombre:"Coconut Leche",precio:103000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516893/leche_k7oxco.jpg"},
+{nombre:"Coconut Leche",precio:103000,notas:"Coco,Dulce,Cremoso,Lactónico,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516893/leche_k7oxco.jpg"},
 
 ]
 
 const Lattafa = [
-{nombre:"Yara Elixir",precio:60000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523548/yaraelixir_jqrx6g.webp"},
+{nombre:"Yara Elixir",precio:60000,notas:"Avainillado,Caramelo,Floral blanco,Dulce,Afrutados,Ámbar,Atalcado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523548/yaraelixir_jqrx6g.webp"},
 
-{nombre:"Yara Candy",precio:60000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523549/yaracandy_ouytl6.webp"},
+{nombre:"Yara Candy",precio:60000,notas:"Avainillado,Afrutados,Floral blanco,Atalcado,Amaderado,Cítrico,Ámbar", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523549/yaracandy_ouytl6.webp"},
 
-{nombre:"Yara Tous",precio:62000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523546/yaratous_admksi.webp"},
+{nombre:"Yara Tous",precio:62000,notas:"Tropical,Afrutado,Floral,Almizclado,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523546/yaratous_admksi.webp"},
 
-{nombre:"Eclaire",precio:76000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523567/eclaire_ajxgcd.webp"},
+{nombre:"Eclaire",precio:76000,notas:"Dulce,Avainillado,Caramelo,Cremoso,Ambarado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523567/eclaire_ajxgcd.webp"},
 
-{nombre:"Eclaire Pistacho",precio:74000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522332/eclairep_et7vvf.jpg"},
+{nombre:"Eclaire Pistacho",precio:74000,notas:"Dulce,Pistacho,Avainillado,Cremoso,Nueces,Gourmand", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522332/eclairep_et7vvf.jpg"},
 
-{nombre:"Asad Elixir",precio:80000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523537/asadelixir_ybhwmy.webp"},
+{nombre:"Asad Elixir",precio:80000,notas:"Ámbar,Especiado,Avainillado,Amaderado,Balsámico,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523537/asadelixir_ybhwmy.webp"},
 
-{nombre:"Asad Burbon",precio:75000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523545/asadburnon_ri5zbf.webp"},
+{nombre:"Asad Burbon",precio:75000,notas:"Ambarado,Licoroso,Avainillado,Dulce,Especiado,Amaderado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523545/asadburnon_ri5zbf.webp"},
 
-{nombre:"Asad Zanibar",precio:75000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523535/asadzansibar_le2l9x.webp"},
+{nombre:"Asad Zanibar",precio:75000,notas:"Tropical,Coco,Amaderado,Aromático,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523535/asadzansibar_le2l9x.webp"},
 
-{nombre:"Asad Men",precio:75000,notas:".", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523537/asadmen_om2s2q.webp"},
+{nombre:"Asad Men",precio:75000,notas:"Cálido especiado,Ámbar,Avainillado,Amaderado,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523537/asadmen_om2s2q.webp"},
 
-{nombre:"Bade Al Oud Amethyst",precio:64000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523539/amethyst_scpvd3.webp"},
+{nombre:"Bade Al Oud Amethyst",precio:64000,notas:"Oud,Rosa,Ámbar,Dulce,Amaderado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523539/amethyst_scpvd3.webp"},
 
-{nombre:"Khamrah Dunkan",precio:66000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523578/dunkan_hmfpiw.webp"},
+{nombre:"Khamrah Dunkan",precio:66000,notas:"Ahumado,Dulce,Especiado,Ambarado,Gourmand", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523578/dunkan_hmfpiw.webp"},
 
-{nombre:"Khamrah",precio:66000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522317/khamrah_ntd1ev.jpg"},
+{nombre:"Khamrah",precio:66000,notas:"Dulce,Avainillado,Canela,Ambarado,Especiado,Gourmand", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522317/khamrah_ntd1ev.jpg"},
 
-{nombre:"Khamrah Qahwa",precio:66000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522320/qahwa_gvx4iw.jpg"},
+{nombre:"Khamrah Qahwa",precio:66000,notas:"Café,Dulce,Avainillado,Especiado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522320/qahwa_gvx4iw.jpg"},
 
-{nombre:"Bade Al Oud Honor",precio:68000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522327/honor_pffqsf.jpg"},
+{nombre:"Bade Al Oud Honor",precio:68000,notas:"Amaderado,Especiado,Ámbar,Dulce,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522327/honor_pffqsf.jpg"},
 
-{nombre:"Oud For Glory",precio:64000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522330/glory_cjunnk.jpg"},
+{nombre:"Oud For Glory",precio:64000,notas:"Oud,Ahumado,Amaderado,Especiado,Ámbar", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522330/glory_cjunnk.jpg"},
 
-{nombre:"Bade Al Oud Sublime",precio:64000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523553/sublime_noi42l.webp"},
+{nombre:"Bade Al Oud Sublime",precio:64000,notas:"Afrutado,Dulce,Floral,Ambarado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523553/sublime_noi42l.webp"},
 
-{nombre:"Noble Blush",precio:64000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523573/blush_1_oqd1qs.webp"},
+{nombre:"Noble Blush",precio:64000,notas:"Floral,Dulce,Afrutado,Atalcado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523573/blush_1_oqd1qs.webp"},
 
-{nombre:"Opulent Dubai",precio:70000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522323/opulent_z403yl.jpg"},
+{nombre:"Opulent Dubai",precio:70000,notas:"Amaderado,Ámbar,Especiado,Dulce,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522323/opulent_z403yl.jpg"},
 
-{nombre:"Liam Blue Shine",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523557/liam_phhyow.webp"},
+{nombre:"Liam Blue Shine",precio:78000,notas:"Cítrico,Marino,Aromático,Fresco,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523557/liam_phhyow.webp"},
 
-{nombre:"Nebras Elixir",precio:85000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522342/nebras_ba6hko.jpg"},
+{nombre:"Nebras Elixir",precio:85000,notas:"Dulce,Chocolate,Avainillado,Gourmand,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522342/nebras_ba6hko.jpg"},
 
-{nombre:"Eclaire Banoffi",precio:74000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523574/banoffi_j8twxl.webp"},
+{nombre:"Eclaire Banoffi",precio:74000,notas:"Banana,Dulce,Avainillado,Caramelo,Cremoso", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523574/banoffi_j8twxl.webp"},
 
-{nombre:"His Confession",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523560/His_ygtnvo.webp"},
+{nombre:"His Confession",precio:78000,notas:"Amaderado,Especiado,Aromático,Ámbar,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523560/His_ygtnvo.webp"},
 
-{nombre:"The Kingdom",precio:60000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523559/kingdom_jw1q04.webp"},
+{nombre:"The Kingdom",precio:60000,notas:"Amaderado,Ámbar,Especiado,Aromático,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxext/image/upload/v1775523559/kingdom_jw1q04.webp"},
 
-{nombre:"Mayar Cherry Intense",precio:64000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523569/cherry_wi2uop.webp"},
+{nombre:"Mayar Cherry Intense",precio:64000,notas:"Cereza,Dulce,Avainillado,Afrutado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523569/cherry_wi2uop.webp"},
 
-{nombre:"Musaman",precio:60000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523555/musaman_q2tyrn.webp"},
+{nombre:"Musaman",precio:60000,notas:"Amaderado,Especiado,Ámbar,Dulce,Oud", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523555/musaman_q2tyrn.webp"},
 
-{nombre:"Qaed Al Foursan Unlimited",precio:50000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523565/foursan_yoxqut.webp"},
+{nombre:"Qaed Al Foursan Unlimited",precio:50000,notas:"Coco,Dulce,Tropical,Avainillado,Afrutado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523565/foursan_yoxqut.webp"},
 
-{nombre:"Atlas",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523576/atlas_wtxflp.webp"},
+{nombre:"Atlas",precio:78000,notas:"Marino,Salado,Mineral,Ambarado,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523576/atlas_wtxflp.webp"},
 
-{nombre:"Emaan",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523567/emaan_jwh2he.webp"},
+{nombre:"Emaan",precio:78000,notas:"Floral blanco,Cítrico,Almizclado,Dulce,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523567/emaan_jwh2he.webp"},
 
-{nombre:"Angham",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523541/angham_ampr32.webp"},
+{nombre:"Angham",precio:78000,notas:"Dulce,Avainillado,Floral,Ambarado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523541/angham_ampr32.webp"},
 
-{nombre:"Fakhar Black",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523565/fakharblack_vcpph5.webp"},
+{nombre:"Fakhar Black",precio:78000,notas:"Aromático,Cítrico,Amaderado,Fresco especiado,Ámbar", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523565/fakharblack_vcpph5.webp"},
 
-{nombre:"Fakhar Platin",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522318/platin_riqymz.jpg"},
+{nombre:"Fakhar Platin",precio:78000,notas:"Cítrico,Aromático,Fresco,Amaderado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522318/platin_riqymz.jpg"},
 
-{nombre:"Brioche Vainille",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523571/brioche_uty5jt.webp"},
+{nombre:"Brioche Vainille",precio:78000,notas:"Dulce,Avainillado,Panadero,Cremoso,Gourmand", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523571/brioche_uty5jt.webp"},
 
-{nombre:"Ameerat Arab",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523544/arab_rornro.webp"},
+{nombre:"Ameerat Arab",precio:78000,notas:"Floral,Almizclado,Dulce,Afrutado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523544/arab_rornro.webp"},
 
-{nombre:"Sakeena",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523554/sakeena_gs4uee.webp"},
+{nombre:"Sakeena",precio:78000,notas:"Dulce,Afrutado,Floral,Almizclado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523554/sakeena_gs4uee.webp"},
 
-{nombre:"Ansaam Gold",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523542/ansaam_hpjeoa.webp"},
+{nombre:"Ansaam Gold",precio:78000,notas:"Dulce,Avainillado,Ámbar,Floral,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523542/ansaam_hpjeoa.webp"},
 
-{nombre:"Now Women",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523551/women_jhzg4v.webp"},
+{nombre:"Now Women",precio:78000,notas:"Afrutado,Dulce,Floral,Atalcado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523551/women_jhzg4v.webp"},
 
-{nombre:"Angham Second",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522313/second_piwtxt.jpg"},
+{nombre:"Angham Second",precio:78000,notas:"Dulce,Avainillado,Ambarado,Floral,Cremoso", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522313/second_piwtxt.jpg"},
 
-{nombre:"Dalal Lattafa",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522314/dalal_bnhsfk.jpg"},
+{nombre:"Dalal Lattafa",precio:78000,notas:"Caramelo,Dulce,Ambarado,Avainillado,Gourmand", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522314/dalal_bnhsfk.jpg"},
 
-{nombre:"Habik",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522316/habik_ifldss.jpg"},
+{nombre:"Habik",precio:78000,notas:"Amaderado,Especiado,Ámbar,Dulce,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522316/habik_ifldss.jpg"},
 
-{nombre:"Habik Fem",precio:78000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522315/fem_izvszo.jpg"},
+{nombre:"Habik Fem",precio:78000,notas:"Floral,Dulce,Almizclado,Afrutado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522315/fem_izvszo.jpg"},
 
 
 ]
@@ -311,6 +311,7 @@ div.innerHTML += `
 ${item.stock === "no" ? '<div class="sin-stock">SIN STOCK</div>' : ''}
 <img src="${item.imagen}" loading="lazy">
 <h3>${item.nombre}</h3>
+${item.ml ? `<p class="ml-perfume">${item.ml} ml</p>` : ''}
 <div class="precio-container">
 
     <div class="precio-principal">
@@ -324,9 +325,10 @@ ${item.stock === "no" ? '<div class="sin-stock">SIN STOCK</div>' : ''}
 
 </div>
 
+${item.notas && item.notas.trim() && item.notas.trim() !== "." ? `
 <button class="detalles" onclick="vernotas('${item.nombre}','${item.notas}','${item.imagen}')">
-Ver notas
-</button>
+Ver más
+</button>` : ''}
 
 <button class="agregar" 
 ${item.stock === "no" ? "disabled" : ""}
@@ -444,13 +446,112 @@ function cerrarCarrito(){
 document.getElementById("modalCarrito")?.classList.remove("activo")
 }
 
+// ================== COLORES NOTAS ==================
+
+const coloresNotas = {
+  "afrutados": "#e8654a",
+  "afrutado": "#e8654a",
+  "amaderado": "#8B5E3C",
+  "floral blanco": "#cec8c0",
+  "floral": "#e8a4b8",
+  "atalcado": "#b8aea6",
+  "rosas": "#c4426e",
+  "rosa": "#c4426e",
+  "dulce": "#d4698a",
+  "almizclado": "#9e9e9e",
+  "almizcle": "#9e9e9e",
+  "avainillado": "#c9a87c",
+  "vainilla": "#c9a87c",
+  "fresco": "#7bbfbe",
+  "cálido especiado": "#8b5a2b",
+  "especiado": "#a0522d",
+  "acuático": "#5b9bd5",
+  "marino": "#4682b4",
+  "cítrico": "#e8c830",
+  "limón": "#ffe066",
+  "naranja": "#ff8c42",
+  "bergamota": "#c8a84b",
+  "manzana": "#c84b4b",
+  "oriental": "#c8860a",
+  "ámbar": "#d4882e",
+  "ambar": "#d4882e",
+  "oud": "#4a2e1a",
+  "sándalo": "#d2a679",
+  "cedro": "#a0785a",
+  "patchouli": "#6b4226",
+  "vetiver": "#7a6652",
+  "incienso": "#b8860b",
+  "cuero": "#8b4513",
+  "ahumado": "#555555",
+  "musgo": "#6b8e23",
+  "mentolado": "#40e0d0",
+  "herbal": "#556b2f",
+  "tropical": "#ff8c00",
+  "jengibre": "#d4a040",
+  "pimienta": "#8a5030",
+  "canela": "#a0522d",
+  "cardamomo": "#6b8c54",
+  "café": "#5c3317",
+  "caramelo": "#c87832",
+  "tonka": "#c0a060",
+  "melocotón": "#ffaa88",
+  "frambuesa": "#c43060",
+  "ciruela": "#884898",
+  "aromático": "#7a9e5a",
+  "mineral": "#7a8fa0",
+  "especiado suave": "#c09060",
+  "animálico": "#6b4a30",
+  "salado": "#8aafc0",
+  "verde": "#5a8a4a",
+  "fresco especiado": "#6a9e8a",
+  "coco": "#d4c4a0",
+  "ambarado": "#d4882e",
+  "musgoso": "#4a6e30",
+  "terroso": "#8b7355",
+  "pachulí": "#6b4226",
+  "ozónico": "#a0c4d8",
+  "florales": "#e8a4b8",
+  "lavanda": "#9b7fc4",
+  "balsámico": "#a07840",
+  "almendrado": "#c4a882",
+  "nueces": "#a07840",
+  "cremoso": "#e8d8b0",
+  "tabaco": "#7a5c30",
+  "gourmand": "#d4882e",
+  "animalico": "#6b4a30",
+  "cacao": "#5c3317",
+  "azucarado": "#f0c8a0",
+  "licor": "#8b2040",
+  "lactónico": "#f0e8d8",
+  "floral suave": "#f0c8d8",
+  "pistacho": "#8faa60",
+  "licoroso": "#8b2040",
+  "banana": "#f0d050",
+  "cereza": "#c02040",
+  "panadero": "#d4a870",
+}
+
 // ================== MODAL NOTAS ==================
 
-function vernotas(nombre,texto,imagen){
+function vernotas(nombre, texto, imagen){
 
-document.getElementById("modalTitulo").innerText=nombre
-document.getElementById("modalTexto").innerText=texto
-document.getElementById("modalImagen").src=imagen
+document.getElementById("modalTitulo").innerText = nombre
+document.getElementById("modalImagen").src = imagen
+
+const contenedor = document.getElementById("modalTexto")
+
+if(texto && texto.includes(",")){
+  const notas = texto.split(",").map(n => n.trim()).filter(n => n)
+  const total = notas.length
+  contenedor.innerHTML = notas.map((nota, i) => {
+    const color = coloresNotas[nota.toLowerCase()] || "#8a6233"
+    const width = Math.round(100 - (i * (40 / total)))
+    return `<div class="nota-bar" style="background:${color};width:${width}%">${nota}</div>`
+  }).join("")
+} else {
+  contenedor.innerHTML = ""
+  contenedor.innerText = texto || ""
+}
 
 document.getElementById("modalnotas").classList.add("activo")
 }
@@ -659,7 +760,7 @@ try{
 const res = await fetch("https://opensheet.elk.sh/1b64tYrrXdsgR0wwhpVIR9w4jBbLuHD1PUOXe4LcT6OY/precio")
 const data = await res.json()
 
-const listas = [rasasi, asrar, bharara, armaf, afnan, Paris, maison, frenchavenue, Lattafa]
+const listas = [masvendidos, rasasi, asrar, bharara, armaf, afnan, Paris, maison, frenchavenue, Lattafa]
 
 listas.forEach(lista=>{
 lista.forEach(producto=>{
@@ -669,6 +770,7 @@ let encontrado = data.find(p => p.nombre === producto.nombre)
 if(encontrado){
 producto.precio = parseInt(encontrado.precio)
 producto.stock = encontrado.stock
+if(encontrado.ml) producto.ml = encontrado.ml
 }
 
 })
@@ -697,5 +799,5 @@ return Math.floor(numero / 100) * 100
 
 // ================== INICIAR ==================
 cargarPrecios()
-setInterval(cargarPrecios, 5000) // cada 10 segundos
+setInterval(cargarPrecios, 5000) // cada 5 segundos
 actualizarCarrito()
