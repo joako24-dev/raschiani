@@ -1,11 +1,11 @@
 // ================== PRODUCTOS ==================
 
 const masvendidos = [
-{nombre:"Khamrah",precio:66000,notas:"hola hola  ", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522317/khamrah_ntd1ev.jpg"},
+{nombre:"Khamrah",precio:66000,notas:"Dulce,Avainillado,Canela,Ambarado,Especiado,Gourmand", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522317/khamrah_ntd1ev.jpg"},
 
-{nombre:"Vanilla Voyage",precio:95000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433424/voyage_dzoj4n.webp"},
+{nombre:"Vanilla Voyage",precio:95000,notas:"Dulce,Avainillado,Gourmand,Ambarado,Almizclado,Floral suave,Cremoso", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433424/voyage_dzoj4n.webp"},
 
-{nombre:"Amber Gold",precio:110000,notas:"", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434189/gold_b1ik82.webp"},
+{nombre:"Amber Gold",precio:110000,notas:"Dulce,Avainillado,Afrutado,Ambarado,Almizclado,Tropical", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434189/gold_b1ik82.webp"},
 
 
 ]
@@ -13,7 +13,7 @@ const masvendidos = [
 const rasasi = [ 
 {nombre:"Hawas Fire",precio:90000,notas:"Ámbar,Aromático,Mineral,Marino,Especiado suave,Floral blanco,Animálico,Salado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433882/fire_jxhdvp.webp"},
 
-{nombre:"Hawas Ice",precio:92000,notas:"Afrutados,Cítrico,Dulce,Fresco,Aromático,Almizclado,Atalcado,Fresco especiado,Verde,Floral blanco", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433921/ice_f0jcf9.webp"},
+{nombre:"Hawas Ice",precio:92000,notas:"Afrutados,Cítrico,Dulce,Fresco,Aromático,Almizclado,Atalcado,Fresco especiado,Verde,Floral blanco", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776122441/ice2_bed9jd.jpg"},
 
 {nombre:"Hawas Malibu",precio:105000,notas:"Cítrico,Afrutado,Tropical,Dulce,Ambarado,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433917/malibu_bpjtb6.webp"},
 
@@ -22,6 +22,12 @@ const rasasi = [
 {nombre:"Hawas Black",precio:74000,notas:"Amaderado,Cítrico,Musgoso,Terroso,Fresco especiado,Afrutado,Dulce,Pachulí,Aromático,Tropical", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433911/black_gudi6v.webp"},
 
 {nombre:"Hawas Tropical",precio:105000,notas:"Dulce,Verde,Coco,Amaderado,Avainillado,Afrutados", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433914/tropical_b6a2oa.webp"},
+
+{nombre:"Hawas Diva",precio:105000,notas:"Marino,Cítrico,Aromático,Fresco,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776604792/WhatsApp_Image_2026-04-17_at_16.39.27_2_c5dmez.jpg"},
+
+{nombre:"Hawas London",precio:105000,notas:"Amaderado,Cítrico,Aromático,Ámbar,Especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776604792/WhatsApp_Image_2026-04-17_at_16.39.27_3_yap6tk.jpg"},
+
+{nombre:"Hawas For Him",precio:105000,notas:"Afrutado,Dulce,Cítrico,Canela,Ambarado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776122443/him_r1nif1.jpg"},
 
 ]
 
@@ -51,13 +57,21 @@ const bharara = [
 const armaf = [
 {nombre:"Oddysey Homme",precio:72000,notas:"Ámbar,Cálido especiado,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435107/oddyseyhomme_tl6lyi.webp"},
 
+{nombre:"Oddysey Homme White",precio:72000,notas:"Avainillado,Dulce,Ámbar,Aromático,Cálido especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776119738/home_tkns35.jpg"},
+
 {nombre:"Oddysey Aqua",precio:79000,notas:"Marino,Fresco,Cítrico,Aromático,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435101/oddyseyaqua_apglrm.webp"},
 
 {nombre:"Oddysey Bhaamas",precio:82000,notas:"Dulce,Tropical,Avainillado,Afrutado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435110/oddyseybhaamas_cem5sv.webp"},
 
 {nombre:"Oddysey Spectra",precio:82000,notas:"Dulce,Especiado,Amaderado,Avainillado,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435087/spectra_n84hrc.webp"},
 
+{nombre:"Oddysey Mega",precio:82000,notas:"Cítrico,Aromático,Verde,Fresco,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776383134/WhatsApp_Image_2026-04-16_at_20.44.08_lcbfb0.jpg"},
+
+{nombre:"Oddysey Limoni",precio:82000,notas:"Cítrico,Fresco,Aromático,Dulce,Verde", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776121418/limoni_t8dcr3.jpg "},
+
 {nombre:"Oddysey Mandarin",precio:82000,notas:"Cítrico,Dulce,Afrutado,Aromático,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435091/sky_h5o15a.webp"},
+
+{nombre:"Oddysey Mandarin Elixir",precio:82000,notas:"Cítrico,Dulce,Afrutado,Avainillado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776204495/WhatsApp_Image_2026-04-14_at_19.02.29_1_jx4pqg.jpg"},
 
 {nombre:"Club Nuit Intense Man",precio:70000,notas:"Ámbar,Cítrico,Afrutado,Dulce,Animálico,Tropical", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435444/intenseman_1_zpypnk.webp"},
 
@@ -67,17 +81,29 @@ const armaf = [
 
 {nombre:"Club Nuit Iconic",precio:86000,notas:"Cítrico,Amaderado,Aromático,Fresco especiado,Ámbar,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435126/iconic_sixywj.webp"},
 
+{nombre:"Club Nuit Imperiale",precio:86000,notas:"Floral,Dulce,Avainillado,Atalcado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776383134/WhatsApp_Image_2026-04-16_at_20.44.08_2_qcwphd.jpg"},
+
+{nombre:"Club Nuit Precieux",precio:86000,notas:"Afrutado,Dulce,Amaderado,Ámbar,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776204495/WhatsApp_Image_2026-04-14_at_19.02.29_adjsr6.jpg"},
+
+{nombre:"Club Nuit Bling",precio:86000,notas:"Dulce,Floral,Afrutado,Atalcado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776383133/WhatsApp_Image_2026-04-16_at_20.44.08_1_lcwpfd.jpg"},
+
 {nombre:"Club Nuit Maleka",precio:81000,notas:"Dulce,Floral,Afrutado,Atalcado,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435114/maleka_aoucve.webp"},
+
+{nombre:"Club Nuit Untold",precio:81000,notas:"Ámbar,Dulce,Almizclado,Atalcado,Amaderado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776121132/untold_wnxz5c.jpg"},
+
+{nombre:"Yum Yum",precio:81000,notas:"Dulce,Afrutado,Gourmand,Avainillado,Cremoso", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776215602/WhatsApp_Image_2026-04-14_at_22.11.57_1_c9gpnc.jpg"},
+
+{nombre:"Beach Party",precio:92000,notas:"Tropical,DulceH,Coco,Afrutado,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435078/beach_qghkab.webp"},
+]
+
+const rayhaan = [
+{nombre:"Italia",precio:92000,notas:"Cítrico,Aromático,Floral,Verde,Fresco", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435118/italia_khltzl.webp"},
 
 {nombre:"Terra",precio:89000,notas:"Amaderado,Cítrico,Terroso,Aromático,Musgoso", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435081/terra_nwlqz0.webp"},
 
+{nombre:"Aquatica",precio:92000,notas:"Marino,Fresco,Cítrico,Verde,Ozónico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435122/acuatica_bism0p.webp"},
+
 {nombre:"Pacific Aura",precio:80000,notas:"Marino,Cítrico,Aromático,Fresco,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435098/pacific_jiqmqb.webp"},
-
-{nombre:"Italia",precio:92000,notas:"Cítrico,Aromático,Floral,Verde,Fresco", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435118/italia_khltzl.webp"},
-
-{nombre:"Acuatica",precio:92000,notas:"Marino,Fresco,Cítrico,Verde,Ozónico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435122/acuatica_bism0p.webp"},
-
-{nombre:"Beach Party",precio:92000,notas:"Tropical,Dulce,Coco,Afrutado,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435078/beach_qghkab.webp"},
 
 ]
 
@@ -96,12 +122,18 @@ const afnan = [
 
 {nombre:"Turathi Electric",precio:84000,notas:"Afrutado,Dulce,Ambarado,Almizclado,Fresco,Cítrico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435724/electric_uxblcy.webp"},
 
+{nombre:"Souvenir Floral Bouquet",precio:84000,notas:"Floral,Dulce,Afrutado,Atalcado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776206759/WhatsApp_Image_2026-04-14_at_19.23.57_wos4oc.jpg"},
+
+{nombre:"Rare Carbon",precio:84000,notas:"Cuero,Amaderado,Atalcado,Ozónico,Violeta,Animálico,Oud,Acuático,Rosa,Fresco especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776604476/WhatsApp_Image_2026-04-17_at_16.39.27_aeopmk.jpg"},
+
 ]
 
 const Paris = [
 {nombre:"Minya Coco Lush",precio:60000,notas:"Dulce,Afrutados,Florales,Almizclado,Floral blanco,Almendrado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437762/minya_ebjd98.webp"},
 
 {nombre:"Fayora",precio:89000,notas:"Dulce,Afrutado,Floral,Avainillado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437019/fayora_jmvzbz.webp"},
+
+{nombre:"Fayora Oschino",precio:89000,notas:"Dulce,Afrutado,Floral,Avainillado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776027100/oschino_vr55ml.jpg"},
 
 {nombre:"Khair Confection",precio:73000,notas:"Dulce,Avainillado,Atalcado,Amaderado,Afrutados,Acuático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437029/khair_ppqsvi.webp"},
 
@@ -113,18 +145,28 @@ const Paris = [
 
 {nombre:"Banana Bliss",precio:80000,notas:"Dulce,Afrutado,Tropical,Avainillado,Cremoso", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437006/banana_vn9qxs.webp"},
 
-{nombre:"Wayfarer",precio:80000,notas:"Amaderado,Aromático,Cítrico,Especiado,Ámbar", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775436999/wayfarer_n1nmie.webp"},
-
 {nombre:"Dulzura",precio:80000,notas:"Dulce,Avainillado,Cremoso,Almizclado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437015/dulzura_edoecr.webp"},
 
 {nombre:"Khair Felicity",precio:80000,notas:"Dulce,Floral,Avainillado,Afrutado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437024/felicity_h594hf.webp"},
 
 {nombre:"Marshmallow Blush",precio:80000,notas:"Dulce,Afrutado,Almizclado,Cítrico,Floral blanco", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775437010/blush_rk55ql.webp"},
 
+{nombre:"Rifaqat",precio:80000,notas:"Amaderado,Especiado,Ámbar,Dulce,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776380691/WhatsApp_Image_2026-04-16_at_20.03.01_etxcj7.jpg"},
+
+{nombre:"Taskeen Lactea Divina",precio:80000,notas:"Dulce,Lactónico,Cremoso,Avainillado,Almizclado,Gourmand", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776387036/WhatsApp_Image_2026-04-16_at_21.20.04_el0izm.jpg"},
+
+{nombre:"Quissa Pink",precio:80000,notas:"Dulce,Afrutado,Floral,Atalcado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776387070/WhatsApp_Image_2026-04-16_at_21.20.05_1_ivqtvw.jpg"},
+
+{nombre:"Minya Caramel Dulce",precio:80000,notas:"Dulce,Caramelo,Avainillado,Cremoso,Gourmand", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776387037/WhatsApp_Image_2026-04-16_at_21.20.05_g1v296.jpg"},
+
+{nombre:"Strawberry",precio:80000,notas:"Afrutado,Dulce,Avainillado,Cremoso,Gourmand", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776387037/WhatsApp_Image_2026-04-16_at_21.20.04_1_ljhin7.jpg"},
+
 ]
 
 const maison = [
 {nombre:"Salvo Elixir",precio:50000,notas:"Ámbar,Amaderado,Fresco especiado,Avainillado,Cálido especiado,Dulce,Tabaco,Pachulí,Atalcado,Balsámico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515001/salvo_bm10ye.webp"},
+
+{nombre:"Salvo Intense",precio:50000,notas:"Ámbar,Amaderado,Fresco especiado,Avainillado,Cálido especiado,Dulce,Tabaco,Pachulí,Atalcado,Balsámico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776215061/WhatsApp_Image_2026-04-14_at_19.43.59_1_fxlji4.jpg "},
 
 {nombre:"Galactic Men",precio:55000,notas:"Tabaco,Dulce,Ambarado,Avainillado,Gourmand,Amaderado,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515009/galacticmen_fnankx.webp"},
 
@@ -142,7 +184,7 @@ const maison = [
 
 {nombre:"Leonie Intense",precio:55000,notas:"Dulce,Avainillado,Floral,Atalcado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515007/leonie_dwzkoe.webp"},
 
-{nombre:"Glacier Bold",precio:55000,notas:"Cítrico,Aromático,Fresco,Amaderado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515010/bold_htyknd.webp"},
+//{nombre:"Glacier Bold",precio:55000,notas:"Cítrico,Aromático,Fresco,Amaderado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515010/bold_htyknd.webp"},
 
 {nombre:"Toscano Leather",precio:55000,notas:"Cuero,Ahumado,Amaderado,Animalico,Ámbar", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515000/toscano_rgdv7f.webp"},
 
@@ -152,9 +194,17 @@ const maison = [
 
 {nombre:"Jean Love Vibe",precio:55000,notas:"Dulce,Avainillado,Aromático,Ambarado,Especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515000/vibe_obhyso.webp"},
 
+{nombre:"Jean Love Inmortel",precio:55000,notas:"Amaderado,Aromático,Dulce,Ámbar,Especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776126162/inmortel_qg0bgx.jpg"},
+
+{nombre:"Jean Love Noir",precio:55000,notas:"Dulce,Avainillado,Ambarado,Especiado,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776126163/intense_slh5fi.jpg"},
+
 {nombre:"Your Touch",precio:55000,notas:"Aromático,Amaderado,Cítrico,Especiado,Ámbar", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515011/your_x6d3o4.webp"},
 
 {nombre:"Your Touch Intense",precio:55000,notas:"Ambarado,Dulce,Especiado,Amaderado,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775515008/intense_eymn7y.webp"},
+
+{nombre:"Smoked Oud Vainilla",precio:55000,notas:"Dulce,Gourmand,Amaderado,Oriental,Especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776604701/WhatsApp_Image_2026-04-17_at_16.39.27_1_mryvjq.jpg"},
+
+{nombre:"Anthena",precio:55000,notas:"Floral,Dulce,Atalcado,Almizclado,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776387620/WhatsApp_Image_2026-04-16_at_21.20.03_1_tvacnh.jpg"},
 ]
 
 const frenchavenue = [
@@ -186,11 +236,13 @@ const frenchavenue = [
 
 {nombre:"Proud of You",precio:49000,notas:"Dulce,Avainillado,Aromático,Ambarado,Especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517853/proud_igplad.webp"},
 
+{nombre:"Proud of You Amber",precio:49000,notas:"Dulce,Avainillado,Ámbar,Aromático,Especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776120297/amber_tfpal0.jpg"},
+
 {nombre:"Meringue",precio:80000,notas:"Dulce,Avainillado,Cremoso,Atalcado,Azucarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517855/meringue_bfecc0.webp"},
 
 {nombre:"Azzure Oud",precio:75000,notas:"Oud,Amaderado,Ambarado,Especiado,Balsámico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517848/azzure_nowbhd.webp"},
 
-{nombre:"Veneno",precio:103000,notas:"Dulce,Ambarado,Avainillado,Especiado,Licor", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517850/veneno_vnyxda.webp"},
+{nombre:"Veneno",precio:103000,notas:"Dulce,Ambarado,Avainillado,Especiado,Licor", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776021649/veneno_rwoiat.jpg"},
 
 {nombre:"Grecia",precio:103000,notas:"Floral,Dulce,Afrutado,Almizclado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517856/grecia_ik6asc.webp"},
 
@@ -202,9 +254,13 @@ const frenchavenue = [
 
 {nombre:"Veneno Bianco",precio:103000,notas:"Dulce,Cremoso,Avainillado,Floral,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517846/bianco_pc21s7.webp"},
 
+{nombre:"Veneno Scarlet",precio:103000,notas:"Dulce,Afrutado,Ambarado,Avainillado,Floral", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776387802/WhatsApp_Image_2026-04-03_at_17.58.51_xapxai.jpg"},
+
 {nombre:"Safari Breeze",precio:103000,notas:"Cítrico,Fresco,Verde,Aromático,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517846/breeze_hfmjg6.webp"},
 
 {nombre:"Coconut Leche",precio:103000,notas:"Coco,Dulce,Cremoso,Lactónico,Avainillado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775516893/leche_k7oxco.jpg"},
+
+{nombre:"Wayfarer",precio:80000,notas:"Amaderado,Aromático,Cítrico,Especiado,Ámbar", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775436999/wayfarer_n1nmie.webp"},
 
 ]
 
@@ -253,11 +309,11 @@ const Lattafa = [
 
 {nombre:"His Confession",precio:78000,notas:"Amaderado,Especiado,Aromático,Ámbar,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523560/His_ygtnvo.webp"},
 
-{nombre:"The Kingdom",precio:60000,notas:"Amaderado,Ámbar,Especiado,Aromático,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxext/image/upload/v1775523559/kingdom_jw1q04.webp"},
+{nombre:"The Kingdom Fem",precio:60000,notas:"Amaderado,Ámbar,Especiado,Aromático,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523559/kingdom_jw1q04.webp"},
 
 {nombre:"Mayar Cherry Intense",precio:64000,notas:"Cereza,Dulce,Avainillado,Afrutado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523569/cherry_wi2uop.webp"},
 
-{nombre:"Musaman",precio:60000,notas:"Amaderado,Especiado,Ámbar,Dulce,Oud", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523555/musaman_q2tyrn.webp"},
+//{nombre:"Musaman",precio:60000,notas:"Amaderado,Especiado,Ámbar,Dulce,Oud", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523555/musaman_q2tyrn.webp"},
 
 {nombre:"Qaed Al Foursan Unlimited",precio:50000,notas:"Coco,Dulce,Tropical,Avainillado,Afrutado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775523565/foursan_yoxqut.webp"},
 
@@ -287,8 +343,47 @@ const Lattafa = [
 
 {nombre:"Habik",precio:78000,notas:"Amaderado,Especiado,Ámbar,Dulce,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522316/habik_ifldss.jpg"},
 
-{nombre:"Habik Fem",precio:78000,notas:"Floral,Dulce,Almizclado,Afrutado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775522315/fem_izvszo.jpg"},
+{nombre:"Habik Fem",precio:78000,notas:"Floral,Dulce,Almizclado,Afrutado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776215681/WhatsApp_Image_2026-04-14_at_22.11.57_voslez.jpg"},
 
+{nombre:"Musaman",precio:78000,notas:"Amaderado,Especiado,Oud,Ámbar,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776120429/musaman_ex3orc.jpg"},
+
+{nombre:"Musaman Black Intense",precio:78000,notas:"Amaderado,Especiado,Oud,Ámbar,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776242206/WhatsApp_Image_2026-04-14_at_23.21.54_gqtlrz.jpg"},
+
+{nombre:"Yara Rosa ",precio:78000,notas:"Dulce,Afrutado,Floral,Atalcado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776123274/rosa_vchzva.jpg"},
+
+{nombre:"Petra",precio:78000,notas:"Floral,Dulce,Afrutado,Almizclado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776123277/petra_wvp5kz.jpg"},
+
+{nombre:"Mayar",precio:78000,notas:"Floral,Afrutado,Dulce,Almizclado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776207025/WhatsApp_Image_2026-04-14_at_19.43.59_xpqz0t.jpg"},
+
+{nombre:"Ansaam Silver",precio:78000,notas:"Aromático,Dulce,Avainillado,Ámbar,Especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776123284/silver_safkte.jpg"},
+
+{nombre:"The Kingdom",precio:78000,notas:"Amaderado,Ámbar,Especiado,Aromático,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776207022/WhatsApp_Image_2026-04-14_at_19.43.58_yukkwx.jpg"},
+
+{nombre:"Art Of Universe",precio:78000,notas:"Amaderado,Especiado,Ámbar,Dulce,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776207023/WhatsApp_Image_2026-04-14_at_19.43.58_1_upg96f.jpg"},
+
+{nombre:"Al Quiam Gold",precio:78000,notas:"Cuero,Amaderado,Ámbar,Especiado,Dulce", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776123292/gold_vfmc0s.jpg"},
+
+{nombre:"Shahem Gold",precio:78000,notas:"Afrutado,Dulce,Amaderado,Ámbar,Tropical", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776382520/WhatsApp_Image_2026-04-16_at_20.33.54_1_cgd1k1.jpg"},
+
+{nombre:"Teriaq Intense",precio:78000,notas:"Dulce,Ambarado,Avainillado,Especiado,Balsámico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776382520/WhatsApp_Image_2026-04-16_at_20.33.54_fcdxy9.jpg"},
+
+{nombre:"Vintage Radio",precio:78000,notas:"Amaderado,Avainillado,Dulce,Especiado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776207024/WhatsApp_Image_2026-04-14_at_19.43.58_2_xwp09e.jpg"},
+
+{nombre:"Fakhar Femenino",precio:78000,notas:"Floral blanco,Dulce,Cítrico,Almizclado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776386716/WhatsApp_Image_2026-04-16_at_21.20.02_uz7k4d.jpg"},
+
+{nombre:"Rimaah",precio:78000,notas:"Floral,Dulce,Ambarado,Almizclado,Atalcado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776386717/WhatsApp_Image_2026-04-16_at_21.20.02_1_jwudlj.jpg"},
+
+{nombre:"Jasoor",precio:78000,notas:"Amaderado,Especiado,Ámbar,Dulce,Aromático", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776386716/WhatsApp_Image_2026-04-16_at_21.20.03_nmya1a.jpg"},
+
+
+]
+
+const milano = [
+{nombre:"Game Of Spades King",precio:78000,notas:"Afrutado,Dulce,Ambarado,Amaderado,Almizclado,Tropical", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776605518/WhatsApp_Image_2026-04-18_at_18.18.24_wqptgm.jpg"},
+
+{nombre:"Game Of Spades Full House",precio:78000,notas:"Dulce,Avainillado,Ambarado,Especiado,Aromático,Gourmand", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776605516/WhatsApp_Image_2026-04-18_at_18.18.24_1_wunlas.jpg"},
+
+{nombre:"Game Of Spades Wildcard",precio:78000,notas:"Cítrico,Aromático,Amaderado,Fresco especiado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776605517/WhatsApp_Image_2026-04-18_at_18.18.25_mobr5d.jpg"},
 
 ]
 
@@ -307,7 +402,7 @@ div.innerHTML = ""
 
 lista.forEach(item=>{
 div.innerHTML += `
-<div class="card">
+<div class="card" data-nombre="${item.nombre}">
 ${item.stock === "no" ? '<div class="sin-stock">SIN STOCK</div>' : ''}
 <img src="${item.imagen}" loading="lazy">
 <h3>${item.nombre}</h3>
@@ -354,7 +449,9 @@ crearCatalogo(armaf,"armaf")
 crearCatalogo(afnan,"afnan")
 crearCatalogo(asrar,"asrar")
 crearCatalogo(rasasi,"rasasi")
+crearCatalogo(rayhaan,"rayhaan")
 crearCatalogo(Lattafa,"lattafa")
+crearCatalogo(milano,"milano")
 
 // ================== AGREGAR AL CARRITO ==================
 
@@ -604,18 +701,26 @@ mensaje+=`\nForma de pago: Tarjeta (3 cuotas sin interés)`
 mensaje+=`\nForma de pago: Efectivo / Transferencia (25% OFF)`
 }
 
-// 🔥 NUEVA LÓGICA COMPATIBLE CON IPHONE
-if(navigator.clipboard && window.isSecureContext){
-    navigator.clipboard.writeText(mensaje).then(()=>{
-        alert("Pedido copiado ✅ Ahora te llevo a Instagram")
-        window.open(`https://ig.me/m/raschiani_perfumeria`)
-    }).catch(()=>{
+// Mostrar modal de confirmacion antes de enviar
+document.getElementById("modalConfirmacion").classList.add("activo")
+document.getElementById("btnConfirmarPedido").onclick = function(){
+    cerrarConfirmacion()
+    // 🔥 NUEVA LÓGICA COMPATIBLE CON IPHONE
+    if(navigator.clipboard && window.isSecureContext){
+        navigator.clipboard.writeText(mensaje).then(()=>{
+            window.open(`https://ig.me/m/raschiani_perfumeria`)
+        }).catch(()=>{
+            mostrarMensajeManual(mensaje)
+        })
+    }else{
         mostrarMensajeManual(mensaje)
-    })
-}else{
-    mostrarMensajeManual(mensaje)
+    }
 }
 
+}
+
+function cerrarConfirmacion(){
+    document.getElementById("modalConfirmacion").classList.remove("activo")
 }
 
 // 🔥 FUNCIÓN EXTRA (NO ROMPE NADA)
@@ -760,7 +865,7 @@ try{
 const res = await fetch("https://opensheet.elk.sh/1b64tYrrXdsgR0wwhpVIR9w4jBbLuHD1PUOXe4LcT6OY/precio")
 const data = await res.json()
 
-const listas = [masvendidos, rasasi, asrar, bharara, armaf, afnan, Paris, maison, frenchavenue, Lattafa]
+const listas = [masvendidos, rasasi, asrar, bharara, armaf, afnan, Paris, maison, frenchavenue, Lattafa, rayhaan, milano]
 
 listas.forEach(lista=>{
 lista.forEach(producto=>{
@@ -786,7 +891,9 @@ crearCatalogo(armaf,"armaf")
 crearCatalogo(afnan,"afnan")
 crearCatalogo(asrar,"asrar")
 crearCatalogo(rasasi,"rasasi")
+crearCatalogo(rayhaan,"rayhaan")
 crearCatalogo(Lattafa,"lattafa")
+crearCatalogo(milano,"milano")
 
 }catch(error){
 console.log("Error cargando precios:", error)
@@ -801,3 +908,98 @@ return Math.floor(numero / 100) * 100
 cargarPrecios()
 setInterval(cargarPrecios, 5000) // cada 5 segundos
 actualizarCarrito()
+
+// ================== BUSCADOR ==================
+
+const todosPerfumes = [
+  ...masvendidos.map(p => ({...p, marca:'Más Vendidos',    pagina:'index.html'})),
+  ...rasasi.map(p =>      ({...p, marca:'Rasasi',           pagina:'rasasi.html'})),
+  ...asrar.map(p =>       ({...p, marca:'Maison Asrar',     pagina:'asrar.html'})),
+  ...bharara.map(p =>     ({...p, marca:'Bharara',          pagina:'bharara.html'})),
+  ...armaf.map(p =>       ({...p, marca:'Armaf',            pagina:'armaf.html'})),
+  ...rayhaan.map(p =>     ({...p, marca:'Rayhaan',          pagina:'rayhaan.html'})),
+  ...afnan.map(p =>       ({...p, marca:'Afnan',            pagina:'afnan.html'})),
+  ...Paris.map(p =>       ({...p, marca:'Paris Corner',     pagina:'paris.html'})),
+  ...maison.map(p =>      ({...p, marca:'Maison Alhambra',  pagina:'maison.html'})),
+  ...frenchavenue.map(p =>({...p, marca:'French Avenue',    pagina:'french.html'})),
+  ...Lattafa.map(p =>     ({...p, marca:'Lattafa',          pagina:'lattafa.html'})),
+  ...milano.map(p =>      ({...p, marca:'Jo Milano',        pagina:'milano.html'})),
+]
+
+function buscarPerfume(q) {
+  const resultados = document.getElementById('buscadorResultados')
+  if (!resultados) return
+  const texto = q.trim().toLowerCase()
+  if (!texto) { resultados.style.display = 'none'; return }
+
+  const encontrados = todosPerfumes.filter(p =>
+    p.nombre.toLowerCase().includes(texto)
+  ).slice(0, 8)
+
+  if (!encontrados.length) {
+    resultados.innerHTML = '<div class="busq-vacio">Sin resultados</div>'
+    resultados.style.display = 'block'
+    return
+  }
+
+  resultados.innerHTML = encontrados.map(p => `
+    <div class="busq-item" onclick="irAPerfume('${encodeURIComponent(p.nombre)}','${p.pagina}')">
+      <img src="${p.imagen}" onerror="this.style.display='none'">
+      <div class="busq-info">
+        <span class="busq-nombre">${p.nombre}</span>
+        <span class="busq-marca">${p.marca}</span>
+      </div>
+      <span class="busq-precio">$${formatearPrecio(p.precio)}</span>
+    </div>
+  `).join('')
+  resultados.style.display = 'block'
+}
+
+function irAPerfume(nombreCodificado, pagina) {
+  cerrarBuscador()
+  const actualPage = location.pathname.split('/').pop() || 'index.html'
+  if (actualPage === pagina) {
+    resaltarCard(decodeURIComponent(nombreCodificado))
+  } else {
+    location.href = `${pagina}?perfume=${nombreCodificado}`
+  }
+}
+
+function resaltarCard(nombre) {
+  const card = [...document.querySelectorAll('.card')].find(
+    c => c.dataset.nombre === nombre
+  )
+  if (!card) return
+  card.scrollIntoView({ behavior:'smooth', block:'center' })
+  card.classList.add('card-highlight')
+  setTimeout(() => card.classList.remove('card-highlight'), 2000)
+}
+
+// Al cargar la página, verificar si viene con ?perfume=
+window.addEventListener('load', () => {
+  const params = new URLSearchParams(location.search)
+  const perfume = params.get('perfume')
+  if (perfume) setTimeout(() => resaltarCard(decodeURIComponent(perfume)), 400)
+})
+
+function abrirBuscador() {
+  const overlay = document.getElementById('busqOverlay')
+  if (!overlay) return
+  overlay.classList.add('activo')
+  document.body.style.overflow = 'hidden'
+  setTimeout(() => document.getElementById('buscadorInput')?.focus(), 250)
+}
+
+function cerrarBuscador() {
+  const overlay = document.getElementById('busqOverlay')
+  const input = document.getElementById('buscadorInput')
+  const resultados = document.getElementById('buscadorResultados')
+  if (overlay) overlay.classList.remove('activo')
+  if (input) input.value = ''
+  if (resultados) resultados.style.display = 'none'
+  document.body.style.overflow = ''
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') cerrarBuscador()
+})

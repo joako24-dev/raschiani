@@ -13,7 +13,7 @@
 <nav class="navbar">
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 <a href="index.html">inicio</a>
-<a href="french.html">French Avenue</a>
+<a href="french.html">French Avenue / Fragance World</a>
 <a href="paris.html">Paris Corner</a>
 <a href="lattafa.html">Lattafa</a>
 <a href="maison.html">Maison Alhambra</a>
@@ -22,11 +22,14 @@
 <a href="afnan.html">Afnan</a>
 <a href="asrar.html">Maison Asrar</a>
 <a href="rasasi.html">Rasasi</a>
+<a href="rayhaan.html">Rayhaan</a>
+<a href="milano.html">Jo Milano</a>
 
 <div class="carrito-icono" onclick="abrirCarrito()">
 🛒 <span id="contador">0</span>
 </div>
 </nav>
+<button class="lupa-btn" onclick="abrirBuscador()"><i class="fas fa-search"></i> Buscar</button>
 
 <section class="hero">
 
@@ -70,6 +73,11 @@
 
 </div>
 
+<div class="info-imagenes">
+    <img src="img/pago.jpg" alt="Medios de pago">
+    <img src="img/envios.jpeg" alt="Envíos">
+</div>
+
 <!-- MODAL CARRITO -->
 <div id="modalCarrito" class="modal">
 <div class="contenido">
@@ -84,9 +92,6 @@
     <option value="tarjeta">💳 Tarjeta (3 cuotas sin interés)</option>
     <option value="efectivo">💵 Efectivo / Transferencia (25% OFF)</option>
 </select>
-<p class="importante">IMPORTANTE</p>
-<p id="mensajeCarrito">Al dar click en enviar pedido te enviara a un chat de instagram solo dale a pegar y su pedido estara listo <p>
-
 <div class="botones-carrito">
     <button onclick="enviarPedido()">Finalizar</button>
     <button onclick="vaciarCarrito()">Vaciar</button>
@@ -148,6 +153,28 @@ transparencia y una experiencia de compra premium.
 </div>
 
 </footer>
+
+<!-- MODAL CONFIRMACION -->
+<div id="modalConfirmacion" class="modal">
+    <div class="contenido">
+        <p id="mensajeCarrito"><strong class="importante">Importante :</strong><br>Al dar clik en finalizar te lleva al chat de Instagram, en ese momento darle si o si <strong>PEGAR</strong> y tu pedido quedará escrito en el chat 🙂</p>
+        <div class="botones-carrito" style="margin-top:20px;">
+            <button id="btnConfirmarPedido">Confirmar</button>
+            <button onclick="cerrarConfirmacion()">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- OVERLAY BUSCADOR -->
+<div class="busq-overlay" id="busqOverlay" onclick="cerrarBuscador()">
+  <div class="busq-modal" onclick="event.stopPropagation()">
+    <input type="text" id="buscadorInput" placeholder="Buscar perfume..." oninput="buscarPerfume(this.value)" autocomplete="off">
+    <button class="busq-close" onclick="cerrarBuscador()"><i class="fas fa-times"></i></button>
+    <div class="buscador-resultados" id="buscadorResultados"></div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
