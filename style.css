@@ -846,19 +846,12 @@ box-shadow:0 6px 22px rgba(185,138,74,0.4);
 
 @media(max-width:768px){
 .lupa-btn{
-top:auto;
-bottom:76px;
-left:16px;
-padding:10px;
-border-radius:50%;
-font-size:0;
-gap:0;
-width:44px;
-height:44px;
-justify-content:center;
-}
-.lupa-btn i{
-font-size:16px;
+top:auto !important;
+bottom:80px !important;
+left:50% !important;
+transform:translateX(-50%);
+font-size:11px;
+padding:8px 14px;
 }
 }
 
