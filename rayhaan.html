@@ -35,6 +35,7 @@
     🛒 <span id="contador">0</span>
   </div>
 </nav>
+<button class="lupa-btn" onclick="abrirBuscador()"><i class="fas fa-search"></i> Buscar</button>
 
 <div class="titulo">
     <h1>Rayhaan</h1>
@@ -126,6 +127,17 @@ transparencia y una experiencia de compra premium.
             <button onclick="cerrarConfirmacion()">Cancelar</button>
         </div>
     </div>
+</div>
+
+
+
+<!-- OVERLAY BUSCADOR -->
+<div class="busq-overlay" id="busqOverlay" onclick="cerrarBuscador()">
+  <div class="busq-modal" onclick="event.stopPropagation()">
+    <input type="text" id="buscadorInput" placeholder="Buscar perfume..." oninput="buscarPerfume(this.value)" autocomplete="off">
+    <button class="busq-close" onclick="cerrarBuscador()"><i class="fas fa-times"></i></button>
+    <div class="buscador-resultados" id="buscadorResultados"></div>
+  </div>
 </div>
 
 <script src="script.js"></script>

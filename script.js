@@ -44,6 +44,13 @@ const asrar = [
 
 ]
 
+const dumont = [
+{nombre:"Nitro Red",precio:80000,notas:"Afrutado,Acuático,Amaderado,Ámbar,Aromático,Cítrico,Fresco especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1777119994/WhatsApp_Image_2026-04-24_at_14.15.52_esk00h.jpg"},
+
+{nombre:"Nitro White",precio:80000,notas:"Cítrico,Fresco,Aromático,Almizclado,Verde,Limpio", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1777119993/WhatsApp_Image_2026-04-24_at_14.17.32_d7i4nn.jpg"},
+
+]
+
 const bharara = [
 {nombre:"Aqua Dubai",precio:110000,notas:"Cítrico,Afrutado,Verde,Aromático,Dulce,Almizclado,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434180/aquadubai_as9ija.webp"},
 
@@ -106,13 +113,6 @@ const rayhaan = [
 {nombre:"Aquatica",precio:92000,notas:"Marino,Fresco,Cítrico,Verde,Ozónico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435122/acuatica_bism0p.webp"},
 
 {nombre:"Pacific Aura",precio:80000,notas:"Marino,Cítrico,Aromático,Fresco,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435098/pacific_jiqmqb.webp"},
-
-]
-
-const dumont = [
-{nombre:"Nitro Red",precio:80000,notas:"Afrutado,Acuático,Amaderado,Ámbar,Aromático,Cítrico,Fresco especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1777119994/WhatsApp_Image_2026-04-24_at_14.15.52_esk00h.jpg"},
-
-{nombre:"Nitro White",precio:80000,notas:"Cítrico,Fresco,Aromático,Almizclado,Verde,Limpio", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1777119993/WhatsApp_Image_2026-04-24_at_14.17.32_d7i4nn.jpg"},
 
 ]
 
@@ -411,7 +411,7 @@ div.innerHTML = ""
 
 lista.forEach(item=>{
 div.innerHTML += `
-<div class="card">
+<div class="card" data-nombre="${item.nombre}">
 ${item.stock === "no" ? '<div class="sin-stock">SIN STOCK</div>' : ''}
 <img src="${item.imagen}" loading="lazy">
 <h3>${item.nombre}</h3>
@@ -434,7 +434,7 @@ ${item.notas && item.notas.trim() && item.notas.trim() !== "." ? `
 Ver más
 </button>` : ''}
 
-<button class="agregar" 
+<button class="agregar"
 ${item.stock === "no" ? "disabled" : ""}
 onclick="${item.stock === "no" ? "" : `agregarCarrito('${item.nombre}',${item.precio},'${item.imagen}', this)`}">
     <span class="texto">Agregar al carrito</span>
@@ -445,6 +445,7 @@ onclick="${item.stock === "no" ? "" : `agregarCarrito('${item.nombre}',${item.pr
 </div>
 `
 })
+
 }
 
 // ================== CARGAR CATALOGOS ==================
@@ -936,3 +937,99 @@ return Math.floor(numero / 100) * 100
 cargarPrecios()
 setInterval(cargarPrecios, 5000) // cada 5 segundos
 actualizarCarrito()
+
+// ================== BUSCADOR ==================
+
+const todosPerfumes = [
+  ...masvendidos.map(p => ({...p, marca:'Más Vendidos',    pagina:'index.html'})),
+  ...rasasi.map(p =>      ({...p, marca:'Rasasi',           pagina:'rasasi.html'})),
+  ...asrar.map(p =>       ({...p, marca:'Maison Asrar',     pagina:'asrar.html'})),
+  ...bharara.map(p =>     ({...p, marca:'Bharara',          pagina:'bharara.html'})),
+  ...armaf.map(p =>       ({...p, marca:'Armaf',            pagina:'armaf.html'})),
+  ...rayhaan.map(p =>     ({...p, marca:'Rayhaan',          pagina:'rayhaan.html'})),
+  ...afnan.map(p =>       ({...p, marca:'Afnan',            pagina:'afnan.html'})),
+  ...Paris.map(p =>       ({...p, marca:'Paris Corner',     pagina:'paris.html'})),
+  ...maison.map(p =>      ({...p, marca:'Maison Alhambra',  pagina:'maison.html'})),
+  ...frenchavenue.map(p =>({...p, marca:'French Avenue',    pagina:'french.html'})),
+  ...Lattafa.map(p =>     ({...p, marca:'Lattafa',          pagina:'lattafa.html'})),
+  ...milano.map(p =>      ({...p, marca:'Jo Milano',        pagina:'milano.html'})),
+  ...dumont.map(p =>      ({...p, marca:'Dumont',           pagina:'dumont.html'})),
+]
+
+function buscarPerfume(q) {
+  const resultados = document.getElementById('buscadorResultados')
+  if (!resultados) return
+  const texto = q.trim().toLowerCase()
+  if (!texto) { resultados.style.display = 'none'; return }
+
+  const encontrados = todosPerfumes.filter(p =>
+    p.nombre.toLowerCase().includes(texto)
+  ).slice(0, 8)
+
+  if (!encontrados.length) {
+    resultados.innerHTML = '<div class="busq-vacio">Sin resultados</div>'
+    resultados.style.display = 'block'
+    return
+  }
+
+  resultados.innerHTML = encontrados.map(p => `
+    <div class="busq-item" onclick="irAPerfume('${encodeURIComponent(p.nombre)}','${p.pagina}')">
+      <img src="${p.imagen}" onerror="this.style.display='none'">
+      <div class="busq-info">
+        <span class="busq-nombre">${p.nombre}</span>
+        <span class="busq-marca">${p.marca}</span>
+      </div>
+      <span class="busq-precio">$${formatearPrecio(p.precio)}</span>
+    </div>
+  `).join('')
+  resultados.style.display = 'block'
+}
+
+function irAPerfume(nombreCodificado, pagina) {
+  cerrarBuscador()
+  const actualPage = location.pathname.split('/').pop() || 'index.html'
+  if (actualPage === pagina) {
+    resaltarCard(decodeURIComponent(nombreCodificado))
+  } else {
+    location.href = `${pagina}?perfume=${nombreCodificado}`
+  }
+}
+
+function resaltarCard(nombre) {
+  const card = [...document.querySelectorAll('.card')].find(
+    c => c.dataset.nombre === nombre
+  )
+  if (!card) return
+  card.scrollIntoView({ behavior:'smooth', block:'center' })
+  card.classList.add('card-highlight')
+  setTimeout(() => card.classList.remove('card-highlight'), 2000)
+}
+
+// Al cargar la página, verificar si viene con ?perfume=
+window.addEventListener('load', () => {
+  const params = new URLSearchParams(location.search)
+  const perfume = params.get('perfume')
+  if (perfume) setTimeout(() => resaltarCard(decodeURIComponent(perfume)), 400)
+})
+
+function abrirBuscador() {
+  const overlay = document.getElementById('busqOverlay')
+  if (!overlay) return
+  overlay.classList.add('activo')
+  document.body.style.overflow = 'hidden'
+  setTimeout(() => document.getElementById('buscadorInput')?.focus(), 250)
+}
+
+function cerrarBuscador() {
+  const overlay = document.getElementById('busqOverlay')
+  const input = document.getElementById('buscadorInput')
+  const resultados = document.getElementById('buscadorResultados')
+  if (overlay) overlay.classList.remove('activo')
+  if (input) input.value = ''
+  if (resultados) resultados.style.display = 'none'
+  document.body.style.overflow = ''
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') cerrarBuscador()
+})
