@@ -766,6 +766,23 @@ color:#888;
 padding:14px 16px;
 }
 
+.lupa-btn{
+top:auto;
+bottom:76px;
+left:16px;
+padding:10px;
+border-radius:50%;
+font-size:0;
+gap:0;
+width:44px;
+height:44px;
+justify-content:center;
+}
+
+.lupa-btn i{
+font-size:16px;
+}
+
 .marcas-dropdown{
 left:0;
 transform:none;
