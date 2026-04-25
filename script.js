@@ -29,6 +29,8 @@ const rasasi = [
 
 {nombre:"Hawas For Him",precio:105000,notas:"Afrutado,Dulce,Cítrico,Canela,Ambarado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776122443/him_r1nif1.jpg"},
 
+{nombre:"Hawas Verde",precio:105000,notas:"Verde,Cítrico,Aromático,Fresco,Almizclado,Amaderado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1777120133/WhatsApp_Image_2026-04-24_at_16.01.32_z8p27z.jpg"},
+
 ]
 
 const asrar = [ 
@@ -104,6 +106,13 @@ const rayhaan = [
 {nombre:"Aquatica",precio:92000,notas:"Marino,Fresco,Cítrico,Verde,Ozónico", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435122/acuatica_bism0p.webp"},
 
 {nombre:"Pacific Aura",precio:80000,notas:"Marino,Cítrico,Aromático,Fresco,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775435098/pacific_jiqmqb.webp"},
+
+]
+
+const dumont = [
+{nombre:"Nitro Red",precio:80000,notas:"Afrutado,Acuático,Amaderado,Ámbar,Aromático,Cítrico,Fresco especiado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1777119994/WhatsApp_Image_2026-04-24_at_14.15.52_esk00h.jpg"},
+
+{nombre:"Nitro White",precio:80000,notas:"Cítrico,Fresco,Aromático,Almizclado,Verde,Limpio", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1777119993/WhatsApp_Image_2026-04-24_at_14.17.32_d7i4nn.jpg"},
 
 ]
 
@@ -402,7 +411,7 @@ div.innerHTML = ""
 
 lista.forEach(item=>{
 div.innerHTML += `
-<div class="card" data-nombre="${item.nombre}">
+<div class="card">
 ${item.stock === "no" ? '<div class="sin-stock">SIN STOCK</div>' : ''}
 <img src="${item.imagen}" loading="lazy">
 <h3>${item.nombre}</h3>
@@ -452,6 +461,7 @@ crearCatalogo(rasasi,"rasasi")
 crearCatalogo(rayhaan,"rayhaan")
 crearCatalogo(Lattafa,"lattafa")
 crearCatalogo(milano,"milano")
+crearCatalogo(dumont,"dumont")
 
 // ================== AGREGAR AL CARRITO ==================
 
@@ -664,6 +674,23 @@ const navbar = document.querySelector(".navbar")
 navbar.classList.toggle("activo")
 }
 
+// ================== DROPDOWN MARCAS ==================
+
+document.addEventListener("DOMContentLoaded", () => {
+  const navMarcas = document.querySelector(".nav-marcas")
+  const btn = document.querySelector(".marcas-btn")
+  if (!btn) return
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation()
+    navMarcas.classList.toggle("abierto")
+  })
+
+  document.addEventListener("click", () => {
+    navMarcas.classList.remove("abierto")
+  })
+})
+
 // ================== VACIAR ==================
 
 function vaciarCarrito(){
@@ -865,7 +892,7 @@ try{
 const res = await fetch("https://opensheet.elk.sh/1b64tYrrXdsgR0wwhpVIR9w4jBbLuHD1PUOXe4LcT6OY/precio")
 const data = await res.json()
 
-const listas = [masvendidos, rasasi, asrar, bharara, armaf, afnan, Paris, maison, frenchavenue, Lattafa, rayhaan, milano]
+const listas = [masvendidos, rasasi, asrar, bharara, armaf, afnan, Paris, maison, frenchavenue, Lattafa, rayhaan, milano, dumont]
 
 listas.forEach(lista=>{
 lista.forEach(producto=>{
@@ -894,6 +921,7 @@ crearCatalogo(rasasi,"rasasi")
 crearCatalogo(rayhaan,"rayhaan")
 crearCatalogo(Lattafa,"lattafa")
 crearCatalogo(milano,"milano")
+crearCatalogo(dumont,"dumont")
 
 }catch(error){
 console.log("Error cargando precios:", error)
@@ -908,98 +936,3 @@ return Math.floor(numero / 100) * 100
 cargarPrecios()
 setInterval(cargarPrecios, 5000) // cada 5 segundos
 actualizarCarrito()
-
-// ================== BUSCADOR ==================
-
-const todosPerfumes = [
-  ...masvendidos.map(p => ({...p, marca:'Más Vendidos',    pagina:'index.html'})),
-  ...rasasi.map(p =>      ({...p, marca:'Rasasi',           pagina:'rasasi.html'})),
-  ...asrar.map(p =>       ({...p, marca:'Maison Asrar',     pagina:'asrar.html'})),
-  ...bharara.map(p =>     ({...p, marca:'Bharara',          pagina:'bharara.html'})),
-  ...armaf.map(p =>       ({...p, marca:'Armaf',            pagina:'armaf.html'})),
-  ...rayhaan.map(p =>     ({...p, marca:'Rayhaan',          pagina:'rayhaan.html'})),
-  ...afnan.map(p =>       ({...p, marca:'Afnan',            pagina:'afnan.html'})),
-  ...Paris.map(p =>       ({...p, marca:'Paris Corner',     pagina:'paris.html'})),
-  ...maison.map(p =>      ({...p, marca:'Maison Alhambra',  pagina:'maison.html'})),
-  ...frenchavenue.map(p =>({...p, marca:'French Avenue',    pagina:'french.html'})),
-  ...Lattafa.map(p =>     ({...p, marca:'Lattafa',          pagina:'lattafa.html'})),
-  ...milano.map(p =>      ({...p, marca:'Jo Milano',        pagina:'milano.html'})),
-]
-
-function buscarPerfume(q) {
-  const resultados = document.getElementById('buscadorResultados')
-  if (!resultados) return
-  const texto = q.trim().toLowerCase()
-  if (!texto) { resultados.style.display = 'none'; return }
-
-  const encontrados = todosPerfumes.filter(p =>
-    p.nombre.toLowerCase().includes(texto)
-  ).slice(0, 8)
-
-  if (!encontrados.length) {
-    resultados.innerHTML = '<div class="busq-vacio">Sin resultados</div>'
-    resultados.style.display = 'block'
-    return
-  }
-
-  resultados.innerHTML = encontrados.map(p => `
-    <div class="busq-item" onclick="irAPerfume('${encodeURIComponent(p.nombre)}','${p.pagina}')">
-      <img src="${p.imagen}" onerror="this.style.display='none'">
-      <div class="busq-info">
-        <span class="busq-nombre">${p.nombre}</span>
-        <span class="busq-marca">${p.marca}</span>
-      </div>
-      <span class="busq-precio">$${formatearPrecio(p.precio)}</span>
-    </div>
-  `).join('')
-  resultados.style.display = 'block'
-}
-
-function irAPerfume(nombreCodificado, pagina) {
-  cerrarBuscador()
-  const actualPage = location.pathname.split('/').pop() || 'index.html'
-  if (actualPage === pagina) {
-    resaltarCard(decodeURIComponent(nombreCodificado))
-  } else {
-    location.href = `${pagina}?perfume=${nombreCodificado}`
-  }
-}
-
-function resaltarCard(nombre) {
-  const card = [...document.querySelectorAll('.card')].find(
-    c => c.dataset.nombre === nombre
-  )
-  if (!card) return
-  card.scrollIntoView({ behavior:'smooth', block:'center' })
-  card.classList.add('card-highlight')
-  setTimeout(() => card.classList.remove('card-highlight'), 2000)
-}
-
-// Al cargar la página, verificar si viene con ?perfume=
-window.addEventListener('load', () => {
-  const params = new URLSearchParams(location.search)
-  const perfume = params.get('perfume')
-  if (perfume) setTimeout(() => resaltarCard(decodeURIComponent(perfume)), 400)
-})
-
-function abrirBuscador() {
-  const overlay = document.getElementById('busqOverlay')
-  if (!overlay) return
-  overlay.classList.add('activo')
-  document.body.style.overflow = 'hidden'
-  setTimeout(() => document.getElementById('buscadorInput')?.focus(), 250)
-}
-
-function cerrarBuscador() {
-  const overlay = document.getElementById('busqOverlay')
-  const input = document.getElementById('buscadorInput')
-  const resultados = document.getElementById('buscadorResultados')
-  if (overlay) overlay.classList.remove('activo')
-  if (input) input.value = ''
-  if (resultados) resultados.style.display = 'none'
-  document.body.style.overflow = ''
-}
-
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') cerrarBuscador()
-})

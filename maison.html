@@ -11,25 +11,30 @@
 <body>
 
 <nav class="navbar">
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-<a href="index.html">inicio</a>
-<a href="french.html">French Avenue / Fragance World</a>
-<a href="paris.html">Paris Corner</a>
-<a href="lattafa.html">Lattafa</a>
-<a href="maison.html">Maison Alhambra</a>
-<a href="bharara.html">Bharara | Al Haramain | Anfar</a>
-<a href="armaf.html">Armaf</a>
-<a href="afnan.html">Afnan</a>
-<a href="asrar.html">Maison Asrar</a>
-<a href="rasasi.html">Rasasi</a>
-<a href="rayhaan.html">Rayhaan</a>
-<a href="milano.html">Jo Milano</a>
+  <a href="index.html" class="nav-logo">RASCHIANI</a>
 
-<div class="carrito-icono" onclick="abrirCarrito()">
-🛒 <span id="contador">0</span>
-</div>
+  <div class="nav-marcas">
+    <button class="marcas-btn">Marcas <span class="marcas-arrow">▾</span></button>
+    <div class="marcas-dropdown">
+      <a href="french.html">French Avenue / Fragance World</a>
+      <a href="paris.html">Paris Corner</a>
+      <a href="lattafa.html">Lattafa</a>
+      <a href="maison.html">Maison Alhambra</a>
+      <a href="bharara.html">Bharara | Al Haramain | Anfar</a>
+      <a href="armaf.html">Armaf</a>
+      <a href="afnan.html">Afnan</a>
+      <a href="asrar.html">Maison Asrar</a>
+      <a href="rasasi.html">Rasasi</a>
+      <a href="rayhaan.html">Rayhaan</a>
+      <a href="milano.html">Jo Milano</a>
+      <a href="dumont.html">Dumont</a>
+    </div>
+  </div>
+
+  <div class="carrito-icono" onclick="abrirCarrito()">
+    🛒 <span id="contador">0</span>
+  </div>
 </nav>
-<button class="lupa-btn" onclick="abrirBuscador()"><i class="fas fa-search"></i> Buscar</button>
 
 <div class="titulo">
     <h1>Maison Alhambra</h1>
@@ -121,17 +126,6 @@ transparencia y una experiencia de compra premium.
             <button onclick="cerrarConfirmacion()">Cancelar</button>
         </div>
     </div>
-</div>
-
-
-
-<!-- OVERLAY BUSCADOR -->
-<div class="busq-overlay" id="busqOverlay" onclick="cerrarBuscador()">
-  <div class="busq-modal" onclick="event.stopPropagation()">
-    <input type="text" id="buscadorInput" placeholder="Buscar perfume..." oninput="buscarPerfume(this.value)" autocomplete="off">
-    <button class="busq-close" onclick="cerrarBuscador()"><i class="fas fa-times"></i></button>
-    <div class="buscador-resultados" id="buscadorResultados"></div>
-  </div>
 </div>
 
 <script src="script.js"></script>
