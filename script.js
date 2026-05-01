@@ -5,9 +5,6 @@ const masvendidos = [
 
 {nombre:"Vanilla Voyage",precio:95000,notas:"Dulce,Avainillado,Gourmand,Ambarado,Almizclado,Floral suave,Cremoso", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433424/voyage_dzoj4n.webp"},
 
-{nombre:"Amber Gold",precio:110000,notas:"Dulce,Avainillado,Afrutado,Ambarado,Almizclado,Tropical", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775434189/gold_b1ik82.webp"},
-
-
 ]
 
 const rasasi = [ 
@@ -221,7 +218,7 @@ const frenchavenue = [
 
 {nombre:"Vulcan Feu ",precio:95000,notas:"Afrutado,Dulce,Floral,Especiado,Ambarado,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517860/vulcanfeu_mzbbjl.webp"},
 
-{nombre:"Vulkan Black",precio:95000,notas:"Especiado,Afrutado,Amaderado,Dulce,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517849/vulcanblack_yognvd.webp"},
+{nombre:"Vulcan Black",precio:95000,notas:"Especiado,Afrutado,Amaderado,Dulce,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517849/vulcanblack_yognvd.webp"},
 
 {nombre:"Liquid Brun",precio:85000,notas:"Dulce,Gourmand,Especiado,Avainillado,Floral,Ambarado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775517863/liquidburn_wbpnqn.webp"},
 
@@ -451,6 +448,7 @@ onclick="${item.stock === "no" ? "" : `agregarCarrito('${item.nombre}',${item.pr
 // ================== CARGAR CATALOGOS ==================
 
 crearCatalogo(masvendidos,"catalogo")
+crearCardPerfumero()
 crearCatalogo(Paris,"paris")
 crearCatalogo(frenchavenue,"french")
 crearCatalogo(maison,"maison")
@@ -773,11 +771,15 @@ window.addEventListener("click", function(e){
         cerrarnotas()
     }
 
+    const modalPerfumero = document.getElementById("modalPerfumero")
+    if(e.target === modalPerfumero){ cerrarPerfumero() }
+
 })
 document.addEventListener("keydown", function(e){
     if(e.key === "Escape"){
         cerrarCarrito()
         cerrarnotas()
+        cerrarPerfumero()
     }
 })
 
@@ -911,6 +913,7 @@ if(encontrado.ml) producto.ml = encontrado.ml
 
 // recargar catálogo
 crearCatalogo(masvendidos,"catalogo")
+crearCardPerfumero()
 crearCatalogo(Paris,"paris")
 crearCatalogo(frenchavenue,"french")
 crearCatalogo(maison,"maison")
@@ -1031,5 +1034,196 @@ function cerrarBuscador() {
 }
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') cerrarBuscador()
+  if (e.key === 'Escape') { cerrarBuscador(); cerrarBuscadorPerfumero() }
 })
+
+// ================== PERFUMERO ==================
+
+const PERF_COLORES = [
+  { color: "Violeta",     imagen: "img/perfumero1.jpeg",     desc: "Perfumero Violeta — 5ml" },
+  { color: "Negro",    imagen: "img/perfumero-negro.jpg",    desc: "Perfumero Negro — 5ml" },
+  { color: "Blanco",   imagen: "img/perfumero-blanco.jpg",   desc: "Perfumero Blanco — 5ml" },
+  { color: "Plateado", imagen: "img/perfumero-plateado.jpg", desc: "Perfumero Plateado — 5ml" },
+]
+
+const PERF_TAMANIOS = [
+  { label: "5ml — Vacío",        precio: 8000,  requierePerfume: false },
+  { label: "5ml — Con perfume",  precio: 17000, requierePerfume: true  },
+]
+
+let perfumeroSeleccionado = null
+let perfSlideIdx = 0
+
+function crearCardPerfumero() {
+  const catalogo = document.getElementById("catalogo")
+  if (!catalogo) return
+  const cardHTML = `
+    <div class="card card-perfumero">
+      <img src="img/perfumero1.jpeg" loading="lazy" alt="Perfumero personalizado">
+      <h3>Decants y Perfumeros</h3>
+      <p class="perf-card-desc">Elegí tu fragancia favorita y la cargamos en un elegante perfumero para llevarlo a donde quieras.</p>
+      <button class="detalles" onclick="abrirPerfumero()">Ver opciones</button>
+    </div>
+  `
+  const primerCard = catalogo.querySelector(".card")
+  if (primerCard) {
+    primerCard.insertAdjacentHTML("afterend", cardHTML)
+  } else {
+    catalogo.innerHTML += cardHTML
+  }
+}
+
+function abrirPerfumero() {
+  const slidesWrap = document.getElementById("perfSlidesWrap")
+  const dotsEl = document.getElementById("perfDots")
+  if (slidesWrap) {
+    slidesWrap.innerHTML = PERF_COLORES.map(c => `
+      <div class="perf-slide">
+        <img src="${c.imagen}" alt="${c.color}">
+        <p class="perf-desc">${c.desc}</p>
+      </div>
+    `).join("")
+  }
+  if (dotsEl) {
+    dotsEl.innerHTML = PERF_COLORES.map((_, i) =>
+      `<span class="perf-dot" onclick="perf_goTo(${i})"></span>`
+    ).join("")
+  }
+  const select = document.getElementById("perfML")
+  if (select) {
+    select.innerHTML = PERF_TAMANIOS.map((t, i) =>
+      `<option value="${i}">${t.label} — $${formatearPrecio(t.precio)}</option>`
+    ).join("")
+  }
+  perfumeroSeleccionado = null
+  const img = document.getElementById("perfElegidoImg")
+  const nombreEl = document.getElementById("perfElegidoNombre")
+  if (img) { img.style.display = "none"; img.src = "" }
+  if (nombreEl) nombreEl.textContent = "Ninguno seleccionado"
+  perf_goTo(0)
+  actualizarEstadoPerfumero()
+  document.getElementById("modalPerfumero")?.classList.add("activo")
+}
+
+function actualizarEstadoPerfumero() {
+  const idx = parseInt(document.getElementById("perfML")?.value ?? 0)
+  const talle = PERF_TAMANIOS[idx]
+  if (!talle) return
+  const buscador = document.querySelector(".btn-elegir-perfume")
+  const elegido = document.getElementById("perfElegido")
+  const btn = document.getElementById("btnAgregarPerfumero")
+  if (talle.requierePerfume) {
+    if (buscador) buscador.style.display = ""
+    if (elegido) elegido.style.display = ""
+    if (btn) btn.disabled = !perfumeroSeleccionado
+  } else {
+    if (buscador) buscador.style.display = "none"
+    if (elegido) elegido.style.display = "none"
+    if (btn) btn.disabled = false
+  }
+}
+
+function cerrarPerfumero() {
+  document.getElementById("modalPerfumero")?.classList.remove("activo")
+}
+
+function perf_goTo(i) {
+  perfSlideIdx = i
+  document.querySelectorAll(".perf-slide").forEach((s, idx) =>
+    s.classList.toggle("activo", idx === i)
+  )
+  document.querySelectorAll(".perf-dot").forEach((d, idx) =>
+    d.classList.toggle("activo", idx === i)
+  )
+}
+
+function perf_prev() {
+  const total = document.querySelectorAll(".perf-slide").length
+  perf_goTo((perfSlideIdx - 1 + total) % total)
+}
+
+function perf_next() {
+  const total = document.querySelectorAll(".perf-slide").length
+  perf_goTo((perfSlideIdx + 1) % total)
+}
+
+function abrirBuscadorPerfumero() {
+  const overlay = document.getElementById("busqPerfOverlay")
+  if (!overlay) return
+  overlay.classList.add("activo")
+  document.body.style.overflow = "hidden"
+  setTimeout(() => document.getElementById("busqPerfInput")?.focus(), 250)
+}
+
+function cerrarBuscadorPerfumero() {
+  const overlay = document.getElementById("busqPerfOverlay")
+  const input = document.getElementById("busqPerfInput")
+  const resultados = document.getElementById("busqPerfResultados")
+  if (overlay) overlay.classList.remove("activo")
+  if (input) input.value = ""
+  if (resultados) resultados.style.display = "none"
+  document.body.style.overflow = ""
+}
+
+function buscarParaPerfumero(q) {
+  const resultados = document.getElementById("busqPerfResultados")
+  if (!resultados) return
+  const texto = q.trim().toLowerCase()
+  if (!texto) { resultados.style.display = "none"; return }
+
+  const encontrados = todosPerfumes.filter(p =>
+    p.nombre.toLowerCase().includes(texto)
+  ).slice(0, 8)
+
+  if (!encontrados.length) {
+    resultados.innerHTML = '<div class="busq-vacio">Sin resultados</div>'
+    resultados.style.display = "block"
+    return
+  }
+
+  resultados.innerHTML = encontrados.map(p => `
+    <div class="busq-item" onclick="elegirPerfumeParaPerfumero('${encodeURIComponent(p.nombre)}','${p.imagen}')">
+      <img src="${p.imagen}" onerror="this.style.display='none'">
+      <div class="busq-info">
+        <span class="busq-nombre">${p.nombre}</span>
+        <span class="busq-marca">${p.marca}</span>
+      </div>
+      <span class="busq-precio">$${formatearPrecio(p.precio)}</span>
+    </div>
+  `).join("")
+  resultados.style.display = "block"
+}
+
+function elegirPerfumeParaPerfumero(nombreCodificado, imagen) {
+  const nombre = decodeURIComponent(nombreCodificado)
+  perfumeroSeleccionado = { nombre, imagen }
+
+  const img = document.getElementById("perfElegidoImg")
+  const nombreEl = document.getElementById("perfElegidoNombre")
+  if (img) { img.src = imagen; img.style.display = "block" }
+  if (nombreEl) nombreEl.textContent = nombre
+
+  cerrarBuscadorPerfumero()
+  actualizarEstadoPerfumero()
+}
+
+function agregarPerfumeroCarrito(boton) {
+  const idx = parseInt(document.getElementById("perfML")?.value ?? 0)
+  const talle = PERF_TAMANIOS[idx]
+  if (!talle) return
+  if (talle.requierePerfume && !perfumeroSeleccionado) return
+
+  const colorActual = PERF_COLORES[perfSlideIdx]
+  const color = colorActual?.color ?? ""
+  const imgPerfumero = colorActual?.imagen ?? "img/perfumero1.jpeg"
+
+  const nombre = talle.requierePerfume
+    ? `Perfumero ${color} 5ml — ${perfumeroSeleccionado.nombre}`
+    : `Perfumero ${color} 5ml — Vacío`
+  const imagen = talle.requierePerfume
+    ? perfumeroSeleccionado.imagen
+    : imgPerfumero
+
+  agregarCarrito(nombre, talle.precio, imagen, boton)
+  cerrarPerfumero()
+}

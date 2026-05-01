@@ -182,6 +182,63 @@ transparencia y una experiencia de compra premium.
   </div>
 </div>
 
+<!-- MODAL PERFUMERO -->
+<div id="modalPerfumero" class="modal">
+  <div class="contenido perfumero-contenido">
+    <h2 class="titulo-modal">Perfumero Personalizado</h2>
+
+    <div class="perf-carousel">
+      <button class="perf-arr" onclick="perf_prev()">&#8249;</button>
+      <div class="perf-slides-wrap" id="perfSlidesWrap"></div>
+      <button class="perf-arr" onclick="perf_next()">&#8250;</button>
+    </div>
+
+    <div class="perf-dots" id="perfDots"></div>
+
+    <div class="perf-elegido" id="perfElegido">
+      <img id="perfElegidoImg" src="" style="display:none" alt="">
+      <div class="perf-elegido-info">
+        <span class="perf-elegido-label">Perfume elegido</span>
+        <span class="perf-elegido-nombre" id="perfElegidoNombre">Ninguno seleccionado</span>
+      </div>
+    </div>
+
+    <button class="btn-elegir-perfume" onclick="abrirBuscadorPerfumero()">
+      <i class="fas fa-search"></i> Elegir perfume
+    </button>
+
+    <div class="perf-talla">
+      <label>Tamaño</label>
+      <select id="perfML" onchange="actualizarEstadoPerfumero()"></select>
+    </div>
+
+    <button class="btn-agregar-perf" id="btnAgregarPerfumero" onclick="agregarPerfumeroCarrito(this)" disabled>
+      Agregar al carrito 🛒
+    </button>
+
+    <button class="perf-cerrar" onclick="cerrarPerfumero()">Cerrar</button>
+  </div>
+</div>
+
+<!-- BUSCADOR PERFUMERO -->
+<div class="busq-overlay" id="busqPerfOverlay" onclick="cerrarBuscadorPerfumero()">
+  <div class="busq-modal perf-busq-modal" onclick="event.stopPropagation()">
+    <div class="perf-busq-header">
+      <i class="fas fa-spray-can"></i>
+      <div>
+        <p class="perf-busq-titulo">Elegí el perfume</p>
+        <p class="perf-busq-sub">Seleccioná la fragancia que llevará tu perfumero</p>
+      </div>
+      <button class="perf-busq-cerrar" onclick="cerrarBuscadorPerfumero()"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="perf-busq-input-wrap">
+      <i class="fas fa-search perf-busq-lupa"></i>
+      <input type="text" id="busqPerfInput" placeholder="Buscar fragancia..." oninput="buscarParaPerfumero(this.value)" autocomplete="off">
+    </div>
+    <div class="buscador-resultados" id="busqPerfResultados"></div>
+  </div>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
