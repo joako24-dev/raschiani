@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RASCHIANI | Decants y Perfumeros</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">RASCHIANI</a>
+
+  <div class="nav-marcas">
+    <button class="marcas-btn">Marcas <span class="marcas-arrow">▾</span></button>
+    <div class="marcas-dropdown">
+      <a href="french.html">French Avenue / Fragance World</a>
+      <a href="paris.html">Paris Corner</a>
+      <a href="lattafa.html">Lattafa</a>
+      <a href="maison.html">Maison Alhambra</a>
+      <a href="bharara.html">Bharara | Al Haramain | Anfar</a>
+      <a href="armaf.html">Armaf</a>
+      <a href="afnan.html">Afnan</a>
+      <a href="asrar.html">Maison Asrar</a>
+      <a href="rasasi.html">Rasasi</a>
+      <a href="rayhaan.html">Rayhaan</a>
+      <a href="milano.html">Jo Milano</a>
+      <a href="dumont.html">Dumont</a>
+      <a href="decants.html">Decants y Perfumeros</a>
+    </div>
+  </div>
+
+  <div class="carrito-icono" onclick="abrirCarrito()">
+    🛒 <span id="contador">0</span>
+  </div>
+</nav>
+<button class="lupa-btn" onclick="abrirBuscador()"><i class="fas fa-search"></i> Buscar</button>
+
+<!-- HEADER SECCIÓN -->
+<div class="decants-header">
+  <h1 class="decants-titulo">Decants y Perfumeros</h1>
+  <p class="decants-sub">Personalizá tu perfumero con la fragancia que más te guste. Elegís el color, elegís el perfume y nosotros lo preparamos para vos.</p>
+  <div class="decants-pasos">
+    <div class="decants-paso">
+      <span class="paso-icon"><i class="fas fa-palette"></i></span>
+      <span>Elegí el color</span>
+    </div>
+    <div class="decants-sep">→</div>
+    <div class="decants-paso">
+      <span class="paso-icon"><i class="fas fa-spray-can"></i></span>
+      <span>Elegí el perfume</span>
+    </div>
+    <div class="decants-sep">→</div>
+    <div class="decants-paso">
+      <span class="paso-icon"><i class="fas fa-box"></i></span>
+      <span>Lo recibís listo</span>
+    </div>
+  </div>
+</div>
+
+<!-- CARD PERFUMERO -->
+<div class="contenedor decants-grid">
+  <div class="card card-perfumero">
+    <img src="img/perfumero1.jpeg" loading="lazy" alt="Perfumero personalizado">
+    <h3>Perfumero Personalizado</h3>
+    <p class="perf-card-desc">Elegí tu fragancia favorita y la cargamos en un elegante perfumero para llevarlo a donde quieras.</p>
+    <button class="detalles" onclick="abrirPerfumero()">Ver opciones</button>
+  </div>
+</div>
+
+<div class="social-float">
+    <a href="https://instagram.com/raschiani_perfumeria" target="_blank" class="icon ig">
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+
+<footer class="footer">
+<div class="footer-container">
+<div class="footer-col">
+<h3>Raschiani Perfumeria</h3>
+<p>Tu perfumeria de confianza para encontrar el perfume ideal. Nos especializamos en perfumeria arabe, brindando calidad, transparencia y una experiencia de compra premium.</p>
+</div>
+<div class="footer-col">
+<h4>Ubicacion</h4>
+<p>📍 San Telmo, Buenos Aires</p>
+<p>Agenda tu cita por privado de instagram</p>
+<p>📧 raschiani_perfumeria</p>
+</div>
+<div class="footer-col">
+<h4>Horarios</h4>
+<p>Sábados: 11:30 - 18:30</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Raschiani. Todos los derechos reservados.</p>
+</div>
+</footer>
+
+<!-- MODAL CARRITO -->
+<div id="modalCarrito" class="modal">
+<div class="contenido">
+<h2>Carrito</h2>
+<ul id="listaCarrito"></ul>
+<p>Total tarjeta: $<span id="totalTarjeta">0</span></p>
+<p>Total efectivo/transferencia: $<span id="totalEfectivo">0</span></p>
+<p class="forma-pago-titulo">Forma de pago:</p>
+<select id="formaPago">
+    <option value="tarjeta">💳 Tarjeta (3 cuotas sin interés)</option>
+    <option value="efectivo">💵 Efectivo / Transferencia (25% OFF)</option>
+</select>
+<div class="botones-carrito">
+    <button onclick="enviarPedido()">Finalizar</button>
+    <button onclick="vaciarCarrito()">Vaciar</button>
+    <button onclick="cerrarCarrito()">Cerrar</button>
+</div>
+</div>
+</div>
+
+<!-- MODAL CONFIRMACION -->
+<div id="modalConfirmacion" class="modal">
+    <div class="contenido">
+        <p id="mensajeCarrito"><strong class="importante">Importante :</strong><br>Al dar clik en finalizar te lleva al chat de Instagram, en ese momento darle si o si <strong>PEGAR</strong> y tu pedido quedará escrito en el chat 🙂</p>
+        <div class="botones-carrito" style="margin-top:20px;">
+            <button id="btnConfirmarPedido">Confirmar</button>
+            <button onclick="cerrarConfirmacion()">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<!-- OVERLAY BUSCADOR GENERAL -->
+<div class="busq-overlay" id="busqOverlay" onclick="cerrarBuscador()">
+  <div class="busq-modal" onclick="event.stopPropagation()">
+    <input type="text" id="buscadorInput" placeholder="Buscar perfume..." oninput="buscarPerfume(this.value)" autocomplete="off">
+    <button class="busq-close" onclick="cerrarBuscador()"><i class="fas fa-times"></i></button>
+    <div class="buscador-resultados" id="buscadorResultados"></div>
+  </div>
+</div>
+
+<!-- MODAL PERFUMERO -->
+<div id="modalPerfumero" class="modal">
+  <div class="contenido perfumero-contenido">
+    <h2 class="titulo-modal">Perfumero Personalizado</h2>
+
+    <div class="perf-carousel">
+      <button class="perf-arr" onclick="perf_prev()">&#8249;</button>
+      <div class="perf-slides-wrap" id="perfSlidesWrap"></div>
+      <button class="perf-arr" onclick="perf_next()">&#8250;</button>
+    </div>
+
+    <div class="perf-dots" id="perfDots"></div>
+
+    <div class="perf-elegido" id="perfElegido">
+      <img id="perfElegidoImg" src="" style="display:none" alt="">
+      <div class="perf-elegido-info">
+        <span class="perf-elegido-label">Perfume elegido</span>
+        <span class="perf-elegido-nombre" id="perfElegidoNombre">Ninguno seleccionado</span>
+      </div>
+    </div>
+
+    <button class="btn-elegir-perfume" onclick="abrirBuscadorPerfumero()">
+      <i class="fas fa-search"></i> Elegir perfume
+    </button>
+
+    <div class="perf-talla">
+      <label>Tamaño</label>
+      <select id="perfML" onchange="actualizarEstadoPerfumero()"></select>
+    </div>
+
+    <button class="btn-agregar-perf" id="btnAgregarPerfumero" onclick="agregarPerfumeroCarrito(this)" disabled>
+      Agregar al carrito 🛒
+    </button>
+
+    <button class="perf-cerrar" onclick="cerrarPerfumero()">Cerrar</button>
+  </div>
+</div>
+
+<!-- BUSCADOR PERFUMERO -->
+<div class="busq-overlay" id="busqPerfOverlay" onclick="cerrarBuscadorPerfumero()">
+  <div class="busq-modal perf-busq-modal" onclick="event.stopPropagation()">
+    <div class="perf-busq-header">
+      <i class="fas fa-spray-can"></i>
+      <div>
+        <p class="perf-busq-titulo">Elegí el perfume</p>
+        <p class="perf-busq-sub">Seleccioná la fragancia que llevará tu perfumero</p>
+      </div>
+      <button class="perf-busq-cerrar" onclick="cerrarBuscadorPerfumero()"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="perf-busq-input-wrap">
+      <i class="fas fa-search perf-busq-lupa"></i>
+      <input type="text" id="busqPerfInput" placeholder="Buscar fragancia..." oninput="buscarParaPerfumero(this.value)" autocomplete="off">
+    </div>
+    <div class="buscador-resultados" id="busqPerfResultados"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

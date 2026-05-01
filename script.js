@@ -5,6 +5,8 @@ const masvendidos = [
 
 {nombre:"Vanilla Voyage",precio:95000,notas:"Dulce,Avainillado,Gourmand,Ambarado,Almizclado,Floral suave,Cremoso", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1775433424/voyage_dzoj4n.webp"},
 
+{nombre:"Hawas Diva",precio:105000,notas:"Marino,Cítrico,Aromático,Fresco,Almizclado", imagen:"https://res.cloudinary.com/dcwhfsxex/image/upload/v1776604792/WhatsApp_Image_2026-04-17_at_16.39.27_2_c5dmez.jpg"},
+
 ]
 
 const rasasi = [ 
@@ -448,7 +450,6 @@ onclick="${item.stock === "no" ? "" : `agregarCarrito('${item.nombre}',${item.pr
 // ================== CARGAR CATALOGOS ==================
 
 crearCatalogo(masvendidos,"catalogo")
-crearCardPerfumero()
 crearCatalogo(Paris,"paris")
 crearCatalogo(frenchavenue,"french")
 crearCatalogo(maison,"maison")
@@ -913,7 +914,6 @@ if(encontrado.ml) producto.ml = encontrado.ml
 
 // recargar catálogo
 crearCatalogo(masvendidos,"catalogo")
-crearCardPerfumero()
 crearCatalogo(Paris,"paris")
 crearCatalogo(frenchavenue,"french")
 crearCatalogo(maison,"maison")
